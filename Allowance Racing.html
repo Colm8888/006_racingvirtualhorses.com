@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jsmain.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Index.css">
+  <link rel="stylesheet" type="text/css" href="CSS SOK/Allowance Racing.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <title>RacingVirtualHorses</title>
+
+</head>
+
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top ">
+  <h3 style="color:white;font-size:22px;">Allowance Racing</h3>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-4">
+      <li class="nav-item">
+        <a class="nav-link" data-value="Home" href="index.html">Home</a> </li>
+      <li class="nav-item">
+        <a class="nav-link" data-value="About Us" href="About Us.html">About Us</a> </li>
+      <li class="nav-item">
+        <a class="nav-link " data-value="Contact Us" href="Contact Us.html">Contact Us</a> </li>
+      <li class="nav-item">
+        <a class="nav-link " data-value="team" href="SOK-Home-Page.html">Go to SOK Section</a> </li>
+    </ul>
+  </div>
+</nav>
+<div class="container container-if-fixed-footer">
+<div class="box01">
+<img class="TrainingTimes-Banner-Image" src="Images SOK/AllowanceTag.png" alt="Stopwatch" width="18%" height="auto">
+<h3>Allowance Racing</h3>
+ <a href="SOK-Home-Page.html" class="btn btn-white btn-sm" role="button" style="color:white">Return to SOK Home Page ...</a>
+</div>
+
+
+  <div class="container">
+
+    <div>
+      <form action="" id="agechangecalculator" onsubmit="return false;">
+          <fieldset>
+          <legend>      <strong>ALLOWANCE CALCULATOR</strong></legend>
+          <table border="0" style="width: 99%">
+            
+        <tr>
+        <th class="auto-style1" style="height: 40px; width: 227px">
+        <input type="button" value="Clear Form" onClick="this.form.reset()" style="width: 100px"/></th>
+        <th class="auto-style1" style="height: 40px; width: 287px">Total No. of Wins</th>
+        <td><input type="text" name="NumberOfWins" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px">
+        <input type=button value=Calculate onClick="calc()" style="width: 100px"></input></td>
+        <th class="auto-style1" style="height: 40px; width: 287px">Number of races since horse last won</th>
+        <td><input type="text" name="NumberOfRacesSinceWin" /></td>
+        <td style="height: 40px"></td>
+        </tr>
+
+
+        <tr>
+          <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 287px">Just enter values in the two boxes above and click </td>
+        <td class="auto-style1" style="height: 40px; width: 287px">"Calculate"</td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 287px"><strong></strong></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 287px"><strong>Base weight =</strong></td>
+        <td style="height: 40px; width: 159px;"><input type="text" id="BaseWeightTextBox" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 287px"><strong>Wins Penalty(s) =</strong></td>
+        <td style="height: 40px; width: 159px;"><input type="text" id="WinsPenaltyTextBox" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 287px"><strong>No Wins Allowance =</strong></td>
+        <td style="height: 40px; width: 159px;"><input type="text" id="NoWinsAlloawnaceTextBox" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 287px"><strong></strong></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 287px"><span style="color:red;font-weight:bold">Weight To Carry =</span></td>
+        <td style="height: 40px; width: 159px;"><input type="text" id="WeightToCarryTextBox" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 400px">Note: The Minimum Weight a Horse can carry is 106 lbs</td>
+
+        </tr>
+
+        <tr>
+        <th class="auto-style1" style="width: 227px">&nbsp;</th>
+        <th class="auto-style1" style="width: 287px">&nbsp;</th>
+        <td style="width: 159px">&nbsp;</td>
+        <td style="height: 40px"></td>
+        </tr>
+
+      </table>
+      </fieldset>
+
+      <script>
+      function calc() {
+         var
+             BaseWeight = 126,
+             WinsPenalty = 4,
+             NoWinAllowance = 2,
+             WeightToCarry1 = 0,
+
+
+      //Get User Input Values
+         NumberOfWins = document.getElementsByName("NumberOfWins")[0].value;
+         NumberOfRacesSinceWin = document.getElementsByName("NumberOfRacesSinceWin")[0].value;
+
+      //Final Calculations
+         WeightToCarry1 = (BaseWeight + (NumberOfWins*WinsPenalty)) - (NoWinAllowance*NumberOfRacesSinceWin);
+         WeightToCarry2 = Math.max(WeightToCarry1, 106),
+
+      //Values to Display
+         BaseWeightTextBox.value = parseFloat(BaseWeight).toFixed(0);
+         WinsPenaltyTextBox.value = NumberOfWins*WinsPenalty;
+         NoWinsAlloawnaceTextBox.value = NumberOfRacesSinceWin*2;
+         WeightToCarryTextBox.value= WeightToCarry2;
+
+
+      }
+
+      window.onload = function () {
+          document.getElementById("submit_button").onclick = calc;
+      };
+      </script>
+      </form>
+
+        <div class="text-center">
+            <a href="Racing Weights.html" class="btn btn-primary">
+              Click here to go to racing weights for stakes racing</a>
+          </div>
+        <hr class="Trainingtimes HR">
+
+    </div>
+
+
+
+    <div class="row">
+      <!-- Row 1 - Column 1 -->
+      <div class="col-md-12">
+        <p>Here is an excerpt from the FAQ section of Sport of Kings
+      </div>
+    </div>
+    <div class="row">
+      <!-- Row 2 - Column 1 -->
+      <div class="col-md-12">
+        <p>The weights for allowance racing are calculated as follows:
+
+          Base weight of 126 lbs<br>
+          Each win over the minimum for the level adds 4 lbs<br>
+          Each race without a win subtracts 2 lbs<br>
+          Approximated weights will be displayed on the race entry page.<br><br>
+          Here's what all this means with examples.
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Row 4 - Column 1 -->
+      <div class="col-md-12">
+        <ul>
+          <li>Horse on 0 wins, 9 races without winning</li>
+          <li></li>
+          <li>Base weight of 126 lbs.</li>
+          <li>This is where you start your calculations</li>
+          <li>No weight for wins, (the horse has not won a race) the weight remains at 126 lbs</li>
+          <li>For every winless run, subtract 2lbs.</li>
+          <li>The horse has not won in his/her last nine races. Subtract 18 lbs (9 x 2 Lbs)</li>
+          <li>Now the weight is currently at 108 lbs (126 - 18) and that will be the horses racing weight.</li>
+        </ul>
+        <hr class="Trainingtimes HR">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Row 4 - Column 1 -->
+      <div class="col-md-12">
+        <ul>
+          <li>Horse on 2 wins, 7 races without winning</li>
+          <li></li>
+          <li>Base weight of 126 lbs.</li>
+          <li>This is where you start your calculations</li>
+          <li>For each race the horse has won add 4 lbs.</li>
+          <li>Now the weight is currently at 134 lbs (126 + 8)</li>
+          <li>For every run since that last win, subtract 2lbs.</li>
+          <li>In this example the horse has not won in his/her last seven races. Subtract 14 lbs (7 x 2 Lbs)</li>
+          <li>Now the weight is currently at 120 lbs (134 - 14) and that will be the horses racing weight.</li>
+        </ul>
+        <hr class="Trainingtimes HR">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Row 4 - Column 1 -->
+      <div class="col-md-12">
+        <ul>
+          <li>Horse on 0 wins, 10 races without winning</li>
+          <li></li>
+          <li>Base weight of 126 lbs.</li>
+          <li>This is where you start your calculations</li>
+          <li>No weight for wins, (the horse has not won a race) the weight remains at 126 lbs</li>
+          <li>For every winless run, subtract 2lbs.</li>
+          <li>The horse has not won in his/her last ten races. Subtract 20 lbs (10 x 2 Lbs)</li>
+          <li>Now the weight is currently at 106 lbs (126 - 20) and that will be the horses racing weight.</li>
+        </ul>
+        <hr class="Trainingtimes HR">
+      </div>
+    </div>
+    <div class="row">
+      <!-- Row 4 - Column 1 -->
+      <div class="col-md-12">
+        <ul>
+          <li>Horse on 0 wins, 11 races without winning</li>
+          <li></li>
+          <li>Base weight of 126 lbs.</li>
+          <li>This is where you start your calculations</li>
+          <li>No additional weight for wins, (the horse has not won a race) the weight remains at 126 lbs</li>
+          <li>For every winless run, subtract 2lbs.</li>
+          <li>The horse has not won in his/her last eleven races. Subtract 22 lbs (11 x 2 Lbs)</li>
+          <li>Now the weight is currently at 104 lbs (126 - 22)</li>
+          <li>However, the minimum racing weight is 106 lbs and that will be the horses racing weight.</li>
+        </ul>
+        <hr class="Trainingtimes HR">
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+          <div class="footer">
+            <p>Copyright 2020: RacingVirtualhorses.com/.net/.online</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>

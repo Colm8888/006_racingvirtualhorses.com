@@ -1,0 +1,228 @@
+/* To change the basic colour scheme
+Change some of the the following ...........
+*/
+
+:root {
+  --Button-colour: #eecc40;
+  --Footer-colour: #2b9c7d02;
+  --Theme-colour: #f1ba96;
+  --NavbarHover-colour: #f1ba96;
+}
+/* 
+.navbar {
+  background-color: var(--Theme-colour);
+}
+
+.nav-link,
+.navbar-brand {
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  background: var(--NavbarHover-colour);
+  color: #42403f;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  background: #fff !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+*/
+.description {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  margin: auto;
+  padding: 2em;
+}
+
+.description h1 {
+  color: #666;
+}
+
+.description h3 {
+  position: absolute;
+  left: 4%;
+  width: 100%;
+  color: #c308db;
+}
+
+.description p {
+  color: #666;
+  font-size: 20px;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.card-header {
+  color: #131212;
+  background-image: linear-gradient(00deg, rgb(238, 195, 136) 0%, rgb(228, 205, 157) 35%, rgba(234,242,244,1) 100%);
+  border-radius: 2px;
+}
+
+.card-title01, .card-title02, .card-title03, .card-title04 {
+  color: #fcfafa;
+  border-radius: 1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.card-text01, .card-text02, .card-text03, .card-text04 {
+  color: #fcfafa;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+}
+
+
+.card01, .card02, .card03, .card04 {
+  border-style: solid;
+  border-color: rgb(236, 126, 75);
+  border-radius: 1em;
+  height: 15em;
+  margin: auto;
+  padding: 2em;
+  text-align: center;
+  width: 20em;
+  background-color: #ecb89e;
+  opacity: 0.95;
+
+}
+
+.card01 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.card02 {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+}
+
+.card03 {
+  position: absolute;
+  top: 30%;
+  left: 52%;
+}
+
+.card04 {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+
+.button-GoTo {
+  background-color: initial;
+  /*background-image: linear-gradient(rgb(111, 27, 133), rgb(110, 74, 110));*/
+  /*background-image: linear-gradient(rgb(7, 7, 7), rgb(34, 32, 34));*/
+  background-image: linear-gradient(00deg, rgb(238, 195, 136) 0%, rgb(228, 205, 157) 35%, rgba(234,242,244,1) 100%);
+  border-radius: 6px;
+  box-shadow: rgba(236, 17, 17, 0.1) 0 2px 4px;
+  color: #111010;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow 0.2s;
+}
+
+.button-GoTo:hover {
+  box-shadow: rgba(20, 20, 19, 0.5) 0 5px 5px;
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+.button-GoTo {
+  transition-duration: 0.4s;
+}
+
+.footer {
+  font-style: normal;
+  font-family: inherit;
+  font-size: 12px;
+  text-decoration: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--Theme-colour);
+  color: white;
+  text-align: center;
+}
+
+/* CSS For Overview Page*/
+.faq-section .card {
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  background: #ecb89e;
+}
+
+.faq-section .card-header {
+  background: #fafafa;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.faq-section .btn-link {
+  color: #444;
+  font-size: 17px;
+}
+
+.faq-section .btn-link:hover {
+  color: #080808; /* soft purple */
+}
+
+
+/* Base styling for toggle buttons */
+.faq-toggle {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding-right: 25px; /* space for indicator */
+}
+
+/* Default indicator (collapsed = +) */
+.faq-toggle::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* When open = show – */
+.faq-toggle[aria-expanded="true"]::after {
+  content: "–";
+}
+.faq-title {
+  color: #007bff;  /* change to your color */
+}
+

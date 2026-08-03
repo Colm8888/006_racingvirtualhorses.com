@@ -1,0 +1,42 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+
+.Contact-Us-Banner-Image{
+position: absolute;
+top: 6%;
+left: 3%;
+border: none;
+}
+
+.h3{
+	padding-top: 20px;
+}
+
+
+.digital-horse01{
+    border-radius: 20px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-text {
+  padding: 10px;
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  font-style: normal;
+  font-family: sans-serif;
+  color: DARKSLATEGRAY;
+  letter-spacing: 2px;
+}

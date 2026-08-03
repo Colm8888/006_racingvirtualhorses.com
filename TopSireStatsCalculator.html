@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jsmain.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Index.css">
+  <link rel="stylesheet" type="text/css" href="CSS SOK/Allowance Racing.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <title>RacingVirtualHorses</title>
+
+</head>
+
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top ">
+  <h3 style="color:white;font-size:22px;">Progeny Calculator</h3>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-4">
+      <li class="nav-item">
+        <a class="nav-link" data-value="Home" href="index.html">Home</a> </li>
+      <li class="nav-item">
+        <a class="nav-link" data-value="About Us" href="About Us.html">About Us</a> </li>
+      <li class="nav-item">
+        <a class="nav-link " data-value="Contact Us" href="Contact Us.html">Contact Us</a> </li>
+      <li class="nav-item">
+        <a class="nav-link " data-value="team" href="SOK-Home-Page.html">Go to SOK Section</a> </li>
+    </ul>
+  </div>
+</nav>
+<div class="container container-if-fixed-footer">
+<div class="box01">
+<img class="TrainingTimes-Banner-Image" src="Images SOK/Breeding.png" alt="Stopwatch" width="18%" height="auto">
+<h3>PROGENY CALCULATOR</h3>
+ <a href="SOK-Home-Page.html" class="btn btn-white btn-sm" role="button" style="color:white">Return to SOK Home Page ...</a>
+</div>
+
+
+  <div class="container">
+
+    <div>
+      <form action="" id="agechangecalculator" onsubmit="return false;">
+          <fieldset>
+          <legend>      <strong></strong></legend>
+          <table border="0" style="width: 99%">
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"><font color="LightCoral">Enter Value</font></td>
+        <th class="auto-style1" style="height: 40px; width: 450px"><font color="LightCoral">Total No. of Offspring</font></th>
+        <td><input type="text" name="NumberOfOffspring" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"><font color="LightCoral">Enter Value</font></td>
+        <th class="auto-style1" style="height: 40px; width: 450px"><font color="LightCoral">Total No. of Offspring that have earned</font></th>
+        <td><input type="text" name="NumberOfEarners" /></td>
+        <td style="height: 40px"></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"><font color="LightCoral">Enter Value</font></td>
+        <th class="auto-style1" style="height: 40px; width: 450px"><font color="LightCoral">Total No. of Offspring that have earned more than $20</font></th>
+        <td><input type="text" name="NumberOfEarners20" /></td>
+        <td style="height: 40px"></td>
+        </tr>
+
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"><hr style="height:2px;border-width:0;color:gray;background-color:gray"></td>
+        <td class="auto-style1" style="height: 40px; width: 227px"><hr style="height:2px;border-width:0;color:gray;background-color:gray"></td>
+        <td class="auto-style1" style="height: 40px; width: 227px"><hr style="height:2px;border-width:0;color:gray;background-color:gray"></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 450px"><strong></strong></td>
+        </tr>
+
+        <tr>
+          <td class="auto-style1" style="height: 40px; width: 227px">
+          <input type=button value=Calculate onClick="calc()" style="width: 100px"></input></td>
+        <td class="auto-style1" style="height: 40px; width: 450px"><strong>No. of Offspring that have NOT earned</strong></td>
+        <td style="height: 40px; width: 159px;"><input type="text" id="NonEarnersTextBox" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 450px"><strong>% of Offspring that have NOT earned</strong></td>
+        <td style="height: 40px; width: 159px;"><input type="text" id="PercentageNonEarnersTextBox" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 450px"><strong>% of Offspring that have earned</strong></td>
+        <td style="height: 40px; width: 159px;"><input type="text" id="PercentageEarnersTextBox" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 450px"><strong>% of Offspring that have earned more than $20</strong></td>
+        <td style="height: 40px; width: 159px;"><input type="text" id="PercentageEarners20TextBox" /></td>
+        </tr>
+
+        <tr>
+        <td class="auto-style1" style="height: 40px; width: 227px"></td>
+        <td class="auto-style1" style="height: 40px; width: 450px"><strong></strong></td>
+        </tr>
+
+        <tr>
+        <th class="auto-style1" style="width: 227px">&nbsp;</th>
+        <th class="auto-style1" style="width: 287px">&nbsp;</th>
+        <td style="width: 159px">&nbsp;</td>
+        <td style="height: 40px"></td>
+        </tr>
+
+
+
+      </table>
+      </fieldset>
+
+      <script>
+      function calc() {
+         var
+             Variable01 = " %",
+             Variable02 = 0,
+             Variable03 = 0,
+             Variable04 = 0,
+
+
+      //Get User Input Values
+         NumberOfOffspring = document.getElementsByName("NumberOfOffspring")[0].value;
+         NumberOfEarners = document.getElementsByName("NumberOfEarners")[0].value;
+         NumberOfEarners20 = document.getElementsByName("NumberOfEarners20")[0].value;
+
+      //Final Calculations
+         Percentage01 = ((NumberOfEarners / NumberOfOffspring)*100);
+         Percentage02 = ((NumberOfEarners20 / NumberOfOffspring)*100);
+         NonEarnersValue = (NumberOfOffspring-NumberOfEarners);
+         PercentageNonEarnersValue = (NumberOfOffspring-NumberOfEarners)/(NumberOfOffspring)*100;
+
+
+      //Values to Display
+         PercentageEarnersTextBox.value = parseFloat(Percentage01).toFixed(2)+  Variable01;
+         PercentageEarners20TextBox.value = parseFloat(Percentage02).toFixed(2)+  Variable01;
+         NonEarnersTextBox.value = NonEarnersValue;
+         PercentageNonEarnersTextBox.value = parseFloat(PercentageNonEarnersValue).toFixed(2)+  Variable01;
+      }
+
+      window.onload = function () {
+          document.getElementById("submit_button").onclick = calc;
+      };
+      </script>
+      </form>
+
+
+          <div class="footer">
+            <p>Copyright 2020: RacingVirtualhorses.com/.net/.online</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>

@@ -1,0 +1,89 @@
+/* The Card Container */
+.card01 {
+  max-width: 18rem;
+  background: #e0e0e0; /* Match this to your body background */
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  
+  /* The "Magic" Shadows 
+  box-shadow: 15px 15px 30px #bebebe, 
+             -15px -15px 30px #ffffff;
+  transition: all 0.2s ease-in-out;*/
+}
+
+/* Inset effect on hover (looks like it's being pressed) */
+.card01:hover {
+  box-shadow: inset 6px 6px 12px #bebebe, 
+              inset -6px -6px 12px #ffffff;
+  transform: scale(0.999);
+}
+
+/* Styling the image */
+.card-icon {
+  /* Doubled the size from the previous 80px to 160px */
+  width: 160px; 
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; /* Centers the image and adds space below it */
+  border-radius: 12px; /* Optional: rounds the corners of the image slightly */
+  transition: transform 0.3s ease;
+}
+
+/* Typography */
+.card-title03 {
+  color: #444;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card-text-small {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+/* Neumorphic Button */
+.button-GoTo {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #444 !important;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 4px 4px 8px #bebebe, 
+             -4px -4px 8px #ffffff;
+  transition: 0.2s;
+}
+
+.button-GoTo:hover {
+  box-shadow: 2px 2px 5px #bebebe, 
+             -2px -2px 5px #ffffff;
+  color: #816e5b !important;
+}
+
+/* Container to hold the cards in a row */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;          /* Allows wrapping on mobile devices */
+  justify-content: center;  /* Centers the cards horizontally */
+  gap: 10px;                /* Small padding between cards */
+  padding: 20px 0;
+  width: 100%;
+}
+
+.card01 {
+  /* Calculate width: (100% / 5) minus a bit for the gaps */
+  flex: 0 1 calc(20% - 15px); 
+  min-width: 180px;           /* Minimum width before it wraps to a new line */
+  box-sizing: border-box;
+  text-align: center;         /* Optional: centers text inside the card */
+}
+
+.navigation-footer {
+  margin-top: 30px;
+}
+

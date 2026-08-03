@@ -1,0 +1,110 @@
+/* To change the basic colour scheme
+Change some of the the following ...........
+*/
+
+:root{
+    --Button-colour: #eecc40;
+    --Footer-colour: #2B9c7d02;
+    --Theme-colour: #858280;
+    --NavbarHover-colour: #858280;
+}
+
+/* To change the banner colour scheme on each page 
+Change the following in box01...........
+*/
+.box01 {
+  background: rgb(78, 78, 78);
+  background: linear-gradient(90deg, rgb(70, 67, 66) 16%, rgb(37, 36, 34) 56%);
+    position: relative;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+
+.navbar{ background-color: var(--Theme-colour);}
+
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: var(--NavbarHover-colour); color: #42403f; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}
+
+.navbar-collapse{
+ justify-content: flex-end;}
+
+ body {
+   background: url("Images SOK/Digital Horse.png") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+   background-position: center 20px; /* This creates the "margin" effect */
+ }
+
+ .container-if-fixed-footer{
+     margin-bottom:55px;
+ }
+
+.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(244, 244, 244, 0.1);
+}
+
+.description{
+position: absolute;
+top: 30%;
+margin: auto;
+padding: 2em;
+
+}
+.description h1{
+ color:var(--Theme-colour);
+}
+.description p{
+ color:#666;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+
+#RC{
+  border:1px  solid #ffffff;
+  background-color: var(--Theme-colour);
+  font-weight: bold;
+}
+
+#SOK{
+  border:1px  solid #ffffff;
+  background-color: var(--Theme-colour);
+  font-weight: bold;
+}
+
+#RC_Issues{
+  border:1px  solid #ffffff;
+  background-color: var(--Theme-colour);
+  font-weight: bold;
+}
+.footer {
+  font-style: normal;
+  font-family: inherit;
+  font-size:12px;
+  text-decoration: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--Theme-colour);
+  color: white;
+  text-align: center;
+}

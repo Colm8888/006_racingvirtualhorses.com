@@ -1,0 +1,57 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+
+.TrainingTimes-Banner-Image{
+position: absolute;
+top: 6%;
+left: 3%;
+border: none;
+}
+
+.h3{
+	padding-top: 20px;
+}
+
+ul li{
+ font-size:18px;
+ color: #c96903;
+}
+
+p {
+  display: block;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 16px;
+}
+
+hr.Trainingtimes {
+  border: 1px solid #908e95;
+}
+
+img{
+  border: solid black 1px;
+  border-radius: 10px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .container {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  background-color: white;
+  padding: 20px;
+}

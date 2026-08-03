@@ -1,0 +1,87 @@
+
+/* The Charts Page Information Panel/Paragraph  */
+
+.paragraph-panel {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 100%px;
+  width: 100%;             /* Ensures it looks good on mobile */
+  margin: 0 auto;         /* Backup centering */
+
+  justify-content: center; /* Centers horizontally */
+  align-items: flex-start; /* Aligns to the top so padding works */
+  padding-top: 60px;       /* This adds the specific padding above the panel */
+}
+
+/* The Adds Page Styling for the UL list  */
+:root {
+  --primary-color: #7f8286;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 20px;
+  max-width: 500px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px); /* Modern Glassmorphism effect */
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-list li {
+  margin-bottom: 12px;
+}
+
+.navigation-list li:last-child {
+  margin-bottom: 0;
+}
+
+.navigation-list a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: #333;
+  padding: 12px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Smooth hover transitions */
+}
+
+/* Automated Leader Dots */
+.navigation-list a::after {
+  content: "";
+  flex: 1; /* Automatically fills the space */
+  margin: 0 10px;
+  border-bottom: 2px dotted #ccc;
+  order: 1; /* Places dots between the two spans */
+}
+
+.navigation-list a span:first-child {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.navigation-list a .action {
+  order: 2;
+  font-size: 0.85em;
+  color: var(--primary-color);
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* 2025 Hover Trends: 3D Lift & Color Shift */
+.navigation-list a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px); /* Subtle lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+}
+
+.navigation-list a:hover::after {
+  border-bottom-color: var(--primary-color);
+}
+

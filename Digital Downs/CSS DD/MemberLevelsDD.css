@@ -1,0 +1,18 @@
+
+
+#returnButton01{
+position: relative;
+top: 100px;
+left: 20px;
+font-size: 14px;
+color: rgb(90, 86, 86);
+font-weight: bold;
+}
+
+#image01{
+    position: relative;
+    top: 100px;
+    left: 28%;
+    border: solid 2px;
+    border-radius: 5px;
+    }

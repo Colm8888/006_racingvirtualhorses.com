@@ -1,0 +1,43 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+.About-Us-Banner-Image{
+position: absolute;
+top: 6%;
+left: 3%;
+border: none;
+}
+
+.h3{
+	padding-top: 20px;
+}
+
+
+.digital-horse01{
+    border-radius: 20px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-text {
+  width: 20%;
+  font-size: 14px;
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  left: 16px;
+  font-style: normal;
+  font-family: Gill Sans Extrabold, sans-serif;
+  color: MidnightBlue;
+  letter-spacing: 2px;
+}

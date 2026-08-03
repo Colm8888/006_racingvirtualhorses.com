@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jsmain.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/MainFF-NoBackground.css">
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/NavBar.css">
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Calculator.css">
+
+    <title>RacingVirtualHorses</title>
+  </head>
+<body>
+        <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top ">
+          <a href="TheFinalFlight-HomePage.html" style="text-decoration: none;"><h3 style="color:white;font-size:22px;">Return to Final Flight Home Page</h3></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
+        <li class="nav-item">
+          <a class="nav-link" data-value="Home" href="../index.html">Home</a>        </li>
+        <li class="nav-item">
+             <a class="nav-link" data-value="About Us" href="TheFinalFlight-AboutUs.html">About Us</a>        </li>
+        <li class="nav-item">
+            <a class="nav-link " data-value="Contact Us"href="../Contact Us.html">Contact Us</a>    </li>
+        <li class="nav-item">
+           <a class="nav-link " data-value="team" href="../SOK-Home-Page.html">Go to SOK Section</a>       </li>
+        </ul>
+    </div>
+  </nav>
+
+<br>
+<br>
+<div class="container">
+  <div class="paragraph-panel">
+    <div style="text-align: center;"><span class="category" style="font-size: 1.5rem;">Allowance Calculator</span><br><hr>
+</div>
+</div>
+    <h3>Determines what weight you horse will carry in an "Allowance" race</h3><hr>
+<ul>
+  <li>An allowance race is a race whereby the horses racing weight is determined by its recent race performances.</li>
+  <li>The horse will receive weight allowances based on the number of runs since its last win</li> 
+  <li>Or if the horse has never won, the number of races it has previously run.</li>
+  <li>A horse will recice 2lb for each non winning run.</li>
+  <li>The minimum weight a horse can carry is 10St. This means after 7 non-win races the horse does not receive any more allowances.</li>
+</ul>
+
+  
+  </div>
+
+ <div class="container">
+  <form action="" id="agechangecalculator" onsubmit="return false;">
+    <fieldset>
+      <legend>ALLOWANCE CALCULATOR</legend>
+
+      <!-- Row 1: Actions -->
+     
+
+      <!-- Row 2: Instructions -->
+      <div class="form-row">
+        <p class="instruction-text">Just enter the number of races since the horse last won and click "Calculate"</p>
+      </div>
+
+      <!-- Row 3: User Input -->
+      <div class="form-row">
+        <label>Number of races since horse last won</label>
+        <input type="text" name="NumberOfRacesSinceWin" placeholder="0" />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">         
+          <input type="button" value="Calculate" onClick="calc()" class="btn btn-calc" />
+          <input type="button" value="Clear Form" onClick="this.form.reset()" class="btn btn-clear" />
+        </div>
+      </div>
+      <hr />
+
+      <!-- Row 4: Base Weight -->
+      <div class="form-row">
+        <label>Base weight =</label>
+        <input type="text" id="BaseWeightTextBox" class="read-only" readonly />
+      </div>
+
+      <!-- Row 5: Allowance -->
+      <div class="form-row">
+        <label>No Wins Allowance =</label>
+        <input type="text" id="NoWinsAlloawnaceTextBox" class="read-only" readonly />
+      </div>
+
+      <!-- Row 6: Total -->
+      <div class="form-row highlighted">
+        <label>Weight To Carry (lbs) =</label>
+        <input type="text" id="WeightToCarryTextBox" class="read-only result-field" readonly />
+      </div>
+      <!-- Row 7: Total -->
+      <div class="form-row highlighted">
+        <label>Weight To Carry (Stones & Lbs) =</label>
+        <input type="text" id="StonesLbsTextBox" class="read-only result-field" readonly />
+      </div>
+
+      <!-- Row 8: Note -->
+      <div class="form-row">
+        <p class="note">Note: The Minimum Weight a Horse can carry is 10 St (140 lbs)</p>
+        <br>
+        <a button class="button-GoTo" role="button" href="TheFinalFlight-HomePage.html">Return to Previous Page</button></a>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+
+      <script>
+      function calc() {
+         var
+             BaseWeight = 154,
+             BaseWeightStones = 0,
+             NoWinAllowance = 2,
+
+      //Get User Input Values
+         NumberOfRacesSinceWin = document.getElementsByName("NumberOfRacesSinceWin")[0].value;
+
+      // Final Calculations
+      WeightToCarry1 = BaseWeight - (NoWinAllowance * NumberOfRacesSinceWin);
+
+      // This ensures the value is never less than 140lbs (10st)
+      WeightToCarry2 = Math.max(WeightToCarry1, 140);
+
+      BaseWeightStones = BaseWeight / 14;
+
+      // Calculate Stones and Remainder based on the protected WeightToCarry2
+      let stones = Math.floor(WeightToCarry2 / 14);
+      let remainder = WeightToCarry2 % 14;
+
+      // Values to Display
+      BaseWeightTextBox.value = parseFloat(BaseWeight).toFixed(0);
+      NoWinsAlloawnaceTextBox.value = Math.min(NumberOfRacesSinceWin * 2,14);
+      WeightToCarryTextBox.value = WeightToCarry2;
+      StonesLbsTextBox.value = stones + "st " + remainder + "lbs";
+            }
+
+      window.onload = function () {
+          document.getElementById("submit_button").onclick = calc;
+      };
+      </script>
+      </form>
+        <!--
+        <div class="text-center">
+            <a href="Racing Weights.html" class="btn btn-primary">
+              Click here to go to racing weights for stakes racing</a>
+        </div>
+        -->
+    </div>
+
+<br> <br> <br>
+    <div class="footer">
+      <p>Copyright 2020: RacingVirtualHorses.com/.net/.online</p>
+    </div>
+
+</body>
+</html>

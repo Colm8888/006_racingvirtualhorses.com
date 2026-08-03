@@ -1,0 +1,73 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+.Banner-Image{
+position: absolute;
+top: 6%;
+left: 3%;
+border: none;
+}
+
+.sok-LogoImage{
+position:absolute;
+width: 200px;
+height: 100px;
+top: 60px;
+Right: 20px;
+}
+
+.h3{
+	padding-top: 20px;
+}
+
+
+.iframecss {
+    display: block;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.videotitle1 {
+color: #4e8aec;
+font-family: arial, sans-serif;
+font-size: 24px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+text-align: center;
+}
+.videotitle2 {
+color: #0d1ce6;
+font-family: arial, sans-serif;
+font-size: 24px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+text-align: center;#3f17de
+}
+
+.videotitle3 {
+color: #d21cbf;
+font-family: arial, sans-serif;
+font-size: 24px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+text-align: center;
+}
+.videotitle4 {
+color: #dd1123;
+font-family: arial, sans-serif;
+font-size: 24px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+text-align: center;
+}

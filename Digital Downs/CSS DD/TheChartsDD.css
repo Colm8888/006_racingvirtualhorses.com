@@ -1,0 +1,28 @@
+#returnButton01{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    font-size: 14px;
+    color: rgb(90, 86, 86);
+    font-weight: bold;
+    }
+
+ .TheChartsDiv01{
+    position: relative;
+    top: 200px;
+    margin-left: 14%;
+    margin-right: 10%;
+    width: 70%;
+    /*border-style: solid;
+    border-color: black;*/
+    text-align: center;
+    font-size: 15px;
+    color: rgb(rgb(27, 27, 27))
+    }
+
+.table{
+        position: relative;
+        width: 95%;
+        top: 215px;
+        left: 40px;
+        }

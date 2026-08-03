@@ -1,0 +1,53 @@
+body {
+  background-image: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+.Overview-Banner-Image {
+  position: absolute;
+  top: 6%;
+  left: 3%;
+  border: none;
+}
+
+.sok-LogoImage {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  top: 60px;
+  Right: 20px;
+}
+
+.h3 {
+  padding-top: 20px;
+}
+
+/* danger button */
+.btn-danger {
+  background-color: #4b4845;
+  color: #ac2925;
+  border: none;
+  border-color: #040303;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #f7f0f0;
+  font-family: inherit;
+  font-style: normal;
+  border: 2px solid;
+  box-shadow: 5px 10px #888888;
+  padding: 5px;
+  width: 100%;
+}
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+  background-color: #7a766f;
+  color: #FFF;
+  border-color: #040303;
+}

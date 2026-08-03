@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jsmain.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/MainFF.css">
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/NavBar.css">
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Misc.css">
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Test.css">
+
+    <title>RacingVirtualHorses</title>
+  </head>
+<body>
+        <!-- navbar 
+  <nav class="navbar navbar-expand-lg fixed-top ">
+          <a href="TheFinalFlight-HomePage.html" style="text-decoration: none;"><h3 style="color:white;font-size:22px;">Return to Final Flight Home Page</h3></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
+        <li class="nav-item">
+          <a class="nav-link" data-value="Home" href="../index.html">Home</a>        </li>
+        <li class="nav-item">
+             <a class="nav-link" data-value="About Us" href="TheFinalFlight-AboutUs.html">About Us</a>        </li>
+        <li class="nav-item">
+            <a class="nav-link " data-value="Contact Us"href="../Contact Us.html">Contact Us</a>    </li>
+        <li class="nav-item">
+           <a class="nav-link " data-value="team" href="../SOK-Home-Page.html">Go to SOK Section</a>       </li>
+        </ul>
+    </div>
+  </nav>
+-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="controls">
+  <button id="start-btn">Click to Reveal Results</button>
+</div>
+
+<p class="info-header">
+  Cheltenham Sat 17th Jan. 2M WFA Value £48.00
+</p>
+
+<div id="text-container">
+  <p class="fade-line" style="color: rgb(240, 167, 10);">First - Al Boom Photo - Colin The Grinch - £24.00.</p>
+  <p class="fade-line" style="color: grey;">Second - Santini - Dynamo - £12.00.</p>
+  <p class="fade-line" style="color: #CD7F32;">Third - Lostintranslation - Rubi Rocks - £6.00.</p>
+  <p class="fade-line">Fourth - Monalee - MJ - £4.00.</p>
+  <p class="fade-line">Fifth - Delta Work - Colin The Grinch - Tough Luck, On the Bubble.</p>
+  <p class="fade-line">Sixth - Real Steel - Green as Grass - £0.00.</p>
+  <p class="fade-line">Seventh - Kemboy - Tannery Stud - £0.00.</p>
+  <p class="fade-line">Eight - Clan Des Obaux - Chaos - £0.00.</p>
+  <p class="fade-line">Ninth - Bristol De Mai - St Patricks Day - £0.00.</p>
+</div>
+
+
+
+  
+<br> <br> <br>
+    <div class="footer">
+      <p>Copyright 2020: RacingVirtualHorses.com/.net/.online</p>
+    </div>
+
+<!--Script here-->
+<script>
+const btn = document.getElementById('start-btn');
+const lines = document.querySelectorAll('.fade-line');
+
+btn.addEventListener('click', () => {
+  const totalLines = lines.length;
+
+  lines.forEach((line, index) => {
+    line.classList.remove('animate');
+    void line.offsetWidth; 
+
+    // REVERSE LOGIC:
+    // If there are 3 lines, index 2 (the last line) gets 0s delay
+    // Index 1 gets 0.4s, and Index 0 (the first line) gets 0.8s
+    const reverseIndex = (totalLines - 1) - index;
+    line.style.animationDelay = `${reverseIndex * 2.0}s`;
+    
+    line.classList.add('animate');
+  });
+});
+</script>
+  </body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+.RealMoney01 {
+    position: relative;
+    /*border: 1px solid #919290;*/
+    width: 90%;
+    top: 80px;
+    /*Center Div*/
+    margin: auto;
+    /*Center Text in Div*/
+    display: flex;
+    justify-content: left;
+  }
+
+  #returnButton01{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    font-size: 14px;
+    color: rgb(90, 86, 86);
+    font-weight: bold;
+    }
+
+
+  .RealMoney03 {
+    position: relative;
+    width: 100%;
+    top: 90px;
+    /*Center Div*/
+    margin: auto;
+    /*Center Text in Div*/
+    display: flex;
+    justify-content: center;
+  }
+
+  .RealMoney04 {
+    position: relative;
+    width: 100%;
+    top: 180px;
+    /*Center Div*/
+    margin: auto;
+    /*Center Text in Div*/
+    display: flex;
+    justify-content: center;
+  }
+
+  #image01{
+    position: relative;
+    width: 40%;
+    top: 0px;
+    left: 3.5%;
+  }
+
+  #image02{
+    position: relative;
+    width: 40%;
+    top: 0px;
+    left: 2%;
+  }

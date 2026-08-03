@@ -1,0 +1,36 @@
+body {
+  background-image: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+.Overview-Banner-Image {
+  position: absolute;
+  top: 14%;
+  left: 3%;
+  border: none;
+  border-radius: 5px;
+}
+
+.sok-LogoImage {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 60px;
+  Right: 20px;
+}
+
+.h3 {
+  padding-top: 20px;
+}
+
+.GrowthLinesImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border: solid black 0px;
+}

@@ -1,0 +1,20 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+
+.TheCosts-Banner-Image{
+position: absolute;
+top: 6%;
+left: 3%;
+border: none;
+}
+
+.h3{
+	padding-top: 20px;
+}

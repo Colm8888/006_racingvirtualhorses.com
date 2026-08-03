@@ -1,0 +1,46 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+.Maturity-Banner-Image{
+position: absolute;
+top: 6%;
+left: 3%;
+border: none;
+}
+
+.h3{
+	padding-top: 20px;
+}
+
+ul li{
+ font-size:12px;
+}
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+}
+
+hr.border-line {
+  border-top: 1px solid gray;
+}
+
+img{
+  border: solid black 1px;
+  border-radius: 10px;
+}
+
+.row{
+  margin-top: 30px;
+  margin-bottom: 30px
+}

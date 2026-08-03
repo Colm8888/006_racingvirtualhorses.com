@@ -1,0 +1,30 @@
+.navbar {
+  background-color: var(--Theme-colour);
+}
+
+.nav-link,
+.navbar-brand {
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  background: var(--NavbarHover-colour);
+  color: #42403f;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  background: #fff !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}

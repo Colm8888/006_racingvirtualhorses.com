@@ -1,0 +1,384 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 65px;
+}
+
+h1, h2, h3, h4, h5, h6, img{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.img{
+  text-align: justify;
+  border: color red;
+}
+
+.button {
+  color: #070d0c; //Button Text Color
+  padding: 1px;
+  border-style: ridge;
+  border-color: #e30e0e;
+
+  letter-spacing: 0.01em;
+  font-size: 10px;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Float six columns side by side */
+.column {
+  float: left;
+  width: 16.5%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/*  Card 1 "An Overview"  */
+.card1 {
+background-color: #de1616;
+text-align: center;
+}
+.button1 {
+background-color: #ba0e0e;
+border-radius: 3.5px;
+margin-top: 5px;
+}
+.button1:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 2 "The Costs"  */
+.card2 {
+background-color: #3b47e8;
+text-align: center;
+}
+.button2 {
+background-color: #1157df;
+border-radius: 3.5px;
+border-color: #1157df;
+margin-top: 7px;
+}
+.button2:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 3 "Bonus Credits"  */
+.card3 {
+background-color: #54ed96;
+text-align: center;
+}
+.button3 {
+background-color: #54ed96;
+border-radius: 3.5px;
+border-color: #54ed96;
+margin-top: 6px;
+}
+.button3:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 4 "Horse Maturity"  */
+.card4 {
+background-color: #e6a21e;
+text-align: center;
+}
+.button4 {
+background-color: #e6a21e;
+border-radius: 3.5px;
+border-color: #e6a21e;
+margin-top: 8px;
+}
+.button4:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 5 "Stamina"  */
+.card5 {
+background-color: white;
+text-align: center;
+}
+.button5 {
+background-color: white;
+border-radius: 3.5px;
+border-color: #ded9cf;
+margin-top: 10px;
+}
+.button5:hover {
+/*background-color: #d91224;   */
+color: grey; /*Text Colour*/
+text-decoration: none;
+}
+
+
+/*  Card 6 "Rest or Run"  */
+.card6 {
+background-color: #e95bce;
+text-align: center;
+}
+.button6 {
+background-color: #e95bce;
+border-radius: 3.5px;
+border-color: #e95bce;
+margin-top: 50px;
+}
+.button6:hover {
+/*background-color: #d91224;   */
+color: grey; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 7 "Workouts Tracker"  */
+.card7 {
+background-color: #493d47;
+text-align: center;
+}
+.button7 {
+background-color: #493d47;
+border-radius: 3.5px;
+border-color: #8a8589;
+margin-top: 2px;
+}
+.button7:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 8 "Horse Training"  */
+.card8 {
+background-color: #40b4bb;
+text-align: center;
+}
+.button8 {
+background-color: #40b4bb;
+border-radius: 3.5px;
+border-color: #40b4bb;
+margin-top: 10px;
+}
+.button8:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 9 "Training Times"  */
+.card9 {
+background-color: #5140bb;
+text-align: center;
+}
+.button9 {
+background-color: #5140bb;
+border-radius: 3.5px;
+border-color: #5140bb;
+margin-top: 38px;
+}
+.button9:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+
+/*  Card 10 "Breeding"  */
+.card10 {
+background-color: #dbcd10;
+text-align: center;
+}
+.button10 {
+background-color: #dbcd10;
+border-radius: 3.5px;
+border-color: #dbcd10;
+margin-top: 5px;
+}
+.button10:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 11 "Allowance Racing"  */
+.card11 {
+background-color: #ee6c34;
+text-align: center;
+}
+.button11 {
+background-color: #ee6c34;
+border-radius: 3.5px;
+border-color: #ee6c34;
+margin-top: 5px;
+}
+.button11:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 12 "Training Stars"  */
+.card12 {
+background-color: #820763;
+text-align: center;
+}
+.button12 {
+background-color: #820763;
+border-radius: 3.5px;
+border-color: #820763;
+margin-top: 5px;
+}
+.button12:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 13 "Claimers"  */
+.card13 {
+background-color: #e63c3c;
+text-align: center;
+}
+.button13 {
+background-color: #e63c3c;
+border-radius: 3.5px;
+border-color: #e63c3c;
+margin-top: 5px;
+}
+.button13:hover {
+/*background-color: #d91224;   */
+color: white; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 14 "The Finals"  */
+.card14 {
+background-color: #ffffff;
+text-align: center;
+}
+.button14 {
+background-color: #ffffff;
+border-radius: 3.5px;
+border-color: #ffffff;
+margin-top: 5px;
+}
+.button14:hover {
+/*background-color: #d91224;   */
+color: grey; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 15 "Help Videos"  */
+.card15 {
+background-color: #615959;
+text-align: center;
+}
+.button15 {
+background-color: #615959;
+border-radius: 3.5px;
+border-color: #615959;
+margin-top: 5px;
+}
+.button15:hover {
+/*background-color: #d91224;   */
+color: #ffffff; /*Text Colour*/
+text-decoration: none;
+}
+
+
+/*  Card 16 "Links"  */
+.card16 {
+background-color: #9fedd6;
+text-align: center;
+}
+.button16 {
+background-color: #9fedd6;
+border-radius: 3.5px;
+border-color: #9fedd6;
+margin-top: 5px;
+}
+.button16:hover {
+/*background-color: #d91224;   */
+color: #ffffff; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 17 "Growth Lines"  */
+.card17 {
+background-color: #6036ee;
+text-align: center;
+}
+.button17 {
+background-color: #6036ee;
+border-radius: 3.5px;
+border-color: #6036ee;
+margin-top: 42px;
+}
+.button17:hover {
+/*background-color: #d91224;   */
+color: #ffffff; /*Text Colour*/
+text-decoration: none;
+}
+
+/*  Card 18 "Div Racing Weights"  */
+.card18 {
+background-color: #045816;
+text-align: center;
+}
+.button18 {
+background-color: #045816;
+border-radius: 3.5px;
+border-color: #045816;
+margin-top: 8px;
+}
+.button18:hover {
+/*background-color: #d91224;   */
+color: #ffffff; /*Text Colour*/
+text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Not Used
+p {
+color: #34495E;
+padding-top: 0px;
+font-size: 10px;
+}
+
+*/

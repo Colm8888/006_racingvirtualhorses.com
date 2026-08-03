@@ -1,0 +1,27 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+.Overview-Banner-Image{
+position: absolute;
+top: 6%;
+left: 3%;
+border: none;
+}
+
+.sok-LogoImage{
+position:absolute;
+width: 200px;
+height: 100px;
+top: 60px;
+Right: 20px;
+}
+
+.h3{
+	padding-top: 20px;
+}

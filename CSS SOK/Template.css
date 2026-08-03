@@ -1,0 +1,45 @@
+body {
+  background-image:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+
+
+.TitleBox {
+position: relative;
+padding: 60px;
+text-align: center;
+background: rgb(198,80,7);
+background: linear-gradient(90deg, rgba(198,80,7,1) 16%, rgba(255,106,0,1) 56%);
+color: white;
+font-size: 30px;
+border-radius: 20px;
+margin-bottom: 15px
+}
+
+/*
+.sok-LogoImage{
+position:absolute;
+width: 200px;
+height: 100px;
+top: 60px;
+Right: 20px;
+}
+
+.h3{
+	padding-top: 20px;
+}
+
+img{
+  border: solid 1px lightgrey;
+}
+.Overview-Banner-Image{
+position: absolute;
+top: 6%;
+left: 3%;
+border: none;
+}

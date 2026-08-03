@@ -1,0 +1,60 @@
+.Title{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 50%;
+    }
+    
+.container01{
+    position: absolute;
+    top: 17%;
+    width: 100%;
+    }
+
+.container02{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    }
+
+.container03{
+    position: absolute;
+    top: 63.5%;
+    width: 100%;
+     }
+
+.card-text02{
+    color: #faf6f6;
+    font-weight: bold;
+    }
+
+.card01, .card02, .card03, .card04{
+    border-style: solid;
+    border-color: rgb(7, 7, 7);
+    border-radius: 1em;
+    height: 14em;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+    width: 20em;
+    font-size: 14px;
+    }
+
+    .href01 {
+    font-weight: bold;
+    color: rgb(128, 128, 134);
+    }
+      
+    .href01:hover {
+    color: rgb(99, 94, 94);
+    text-decoration: none;
+    }
+
+    #returnButton01{
+        position: relative;
+        top: 100px;
+        left: 20px;
+        font-size: 14px;
+        color: rgb(90, 86, 86);
+        font-weight: bold;
+        }

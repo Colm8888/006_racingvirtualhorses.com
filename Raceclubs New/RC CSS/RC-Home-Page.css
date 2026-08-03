@@ -1,0 +1,26 @@
+body {
+  background-image: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 100px;
+}
+
+p {
+  color: #34495E;
+  padding-top: 0px;
+  font-size: 12px;
+}
+
+.footer p {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.img-fluid{
+border: none;
+margin-left: auto;
+margin-right: auto;
+}
