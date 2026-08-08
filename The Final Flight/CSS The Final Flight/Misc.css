@@ -6,13 +6,12 @@
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  max-width: 100%px;
+  max-width: 100%;
   width: 100%;             /* Ensures it looks good on mobile */
   margin: 0 auto;         /* Backup centering */
-
   justify-content: center; /* Centers horizontally */
   align-items: flex-start; /* Aligns to the top so padding works */
-  padding-top: 60px;       /* This adds the specific padding above the panel */
+  padding-top: 10px;       /* This adds the specific padding above the panel */
 }
 
 /* The Adds Page Styling for the UL list  */
