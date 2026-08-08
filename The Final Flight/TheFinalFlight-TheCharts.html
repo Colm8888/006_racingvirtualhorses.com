@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jsmain.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="CSS The Final Flight/MainFF.css">
+  <link rel="stylesheet" type="text/css" href="CSS The Final Flight/NavBar.css">
+  <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Misc.css">
+  <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Charts.css">
+
+  <title>RacingVirtualHorses</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    <a href="TheFinalFlight-HomePage.html" style="text-decoration: none;">
+      <h3 style="color:white;font-size:22px;">Return to Final Flight Home Page</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-4">
+        <li class="nav-item">
+          <a class="nav-link" data-value="Home" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-value="About Us" href="TheFinalFlight-AboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-value="Contact Us" href="../Contact Us.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-value="team" href="../SOK-Home-Page.html">Go to SOK Section</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br><br><br><br><br><br><br><br>
+  <div class="container">
+    <!-- First Panel -->
+    <div class="paragraph-panel">
+      <span class="category">The Charts</span>
+      <h2>What Times Dictate a Horse Ability</h2>
+      <p>
+        I encourage you to create your own standards, develop you own charts and run what you see fit.<br>
+        Additionally, horses can have poor training times but perform to much higher standards on the track.<br>
+        They only way to really know is to run your horse and even that has its limitations.<br>
+        These charts are crude and do not take into account the horse poulation or current horse standard.<br>
+        They also do not take into account a horse that is on low maturity or low ground growth.<br>
+        <!-- Hyperlink to open the second panel -->
+        <button class="toggle-link" id="reveal-btn"></button> (Short.cut: <kbd>Alt</kbd> + <kbd>T</kbd>)
+      </p>
+    </div>
+
+    <!-- Second Panel (Hidden initially) -->
+    <div class="paragraph-panel" id="second-panel" style="display: none;">
+      <p>Training times that can be used as indicators of a horse's ability.<br>
+        These apply to <strong>yearling horses only</strong> and does not factor in ground growth and maturity.<br>
+      This chart is best used to evaluate a new yearling.</p>
+      <p>Use these as a guide only, these are just my opinion.<br>
+        A horse will very often outrun their paper ability and conversely what looks supreme on paper may not translate
+        to the track.<br>
+        A Horse doing good/average times may turn out to be excellent after being trained, after maturing and raced.</p>
+
+      <!-- Inserted Ability Chart Table -->
+      <div class="table-responsive">
+        <table class="ability-chart">
+          <thead>
+            <tr>
+              <th class="th-dark"></th>
+              <th class="bg-supreme" colspan="2">Supreme</th>
+              <th class="bg-supreme-excel" colspan="2">Supreme/Excellent</th>
+              <th class="bg-excel-vgood" colspan="2">Excellent/Very Good</th>
+              <th class="bg-vgood-good" colspan="2">Very Good/Good</th>
+              <th class="bg-good-avg" colspan="2">Good/Average</th>
+              <th class="bg-poor" colspan="2">Average/Poor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-dark">2M</td>
+              <td class="bg-supreme">&lt;</td>
+              <td class="bg-supreme">04:16:00</td>
+              <td class="bg-supreme-excel">04:16:00</td>
+              <td class="bg-supreme-excel">04:17:00</td>
+              <td class="bg-excel-vgood">04:17:00</td>
+              <td class="bg-excel-vgood">04:18:00</td>
+              <td class="bg-vgood-good">04:18:00</td>
+              <td class="bg-vgood-good">04:19:00</td>
+              <td class="bg-good-avg">04:19:00</td>
+              <td class="bg-good-avg">04:20:00</td>
+              <td class="bg-poor">&gt;</td>
+              <td class="bg-poor">04:20:00</td>
+            </tr>
+            <tr>
+              <td class="td-dark">2M 1/4</td>
+              <td class="bg-supreme">&lt;</td>
+              <td class="bg-supreme">04:46:00</td>
+              <td class="bg-supreme-excel">04:46:00</td>
+              <td class="bg-supreme-excel">04:47:00</td>
+              <td class="bg-excel-vgood">04:47:00</td>
+              <td class="bg-excel-vgood">04:48:00</td>
+              <td class="bg-vgood-good">04:48:00</td>
+              <td class="bg-vgood-good">04:49:00</td>
+              <td class="bg-good-avg">04:49:00</td>
+              <td class="bg-good-avg">04:50:00</td>
+              <td class="bg-poor">&gt;</td>
+              <td class="bg-poor">04:50:00</td>
+            </tr>
+            <tr>
+              <td class="td-dark">2M 1/2</td>
+              <td class="bg-supreme">&lt;</td>
+              <td class="bg-supreme">05:16:00</td>
+              <td class="bg-supreme-excel">05:16:00</td>
+              <td class="bg-supreme-excel">05:17:00</td>
+              <td class="bg-excel-vgood">05:17:00</td>
+              <td class="bg-excel-vgood">05:18:00</td>
+              <td class="bg-vgood-good">05:18:00</td>
+              <td class="bg-vgood-good">05:19:00</td>
+              <td class="bg-good-avg">05:19:00</td>
+              <td class="bg-good-avg">05:20:00</td>
+              <td class="bg-poor">&gt;</td>
+              <td class="bg-poor">05:20:00</td>
+            </tr>
+            <tr>
+              <td class="td-dark">2M 3/4</td>
+              <td class="bg-supreme">&lt;</td>
+              <td class="bg-supreme">05:46:00</td>
+              <td class="bg-supreme-excel">05:46:00</td>
+              <td class="bg-supreme-excel">05:47:00</td>
+              <td class="bg-excel-vgood">05:47:00</td>
+              <td class="bg-excel-vgood">05:48:00</td>
+              <td class="bg-vgood-good">05:48:00</td>
+              <td class="bg-vgood-good">05:49:00</td>
+              <td class="bg-good-avg">05:49:00</td>
+              <td class="bg-good-avg">05:50:00</td>
+              <td class="bg-poor">&gt;</td>
+              <td class="bg-poor">05:50:00</td>
+            </tr>
+            <tr>
+              <td class="td-dark">3M</td>
+              <td class="bg-supreme">&lt;</td>
+              <td class="bg-supreme">06:16:00</td>
+              <td class="bg-supreme-excel">06:16:00</td>
+              <td class="bg-supreme-excel">06:17:00</td>
+              <td class="bg-excel-vgood">06:17:00</td>
+              <td class="bg-excel-vgood">06:18:00</td>
+              <td class="bg-vgood-good">06:18:00</td>
+              <td class="bg-vgood-good">06:19:00</td>
+              <td class="bg-good-avg">06:19:00</td>
+              <td class="bg-good-avg">06:20:00</td>
+              <td class="bg-poor">&gt;</td>
+              <td class="bg-poor">06:20:00</td>
+            </tr>
+            <tr>
+              <td class="td-dark">3M 1/4</td>
+              <td class="bg-supreme">&lt;</td>
+              <td class="bg-supreme">06:46:00</td>
+              <td class="bg-supreme-excel">06:46:00</td>
+              <td class="bg-supreme-excel">06:47:00</td>
+              <td class="bg-excel-vgood">06:47:00</td>
+              <td class="bg-excel-vgood">06:48:00</td>
+              <td class="bg-vgood-good">06:48:00</td>
+              <td class="bg-vgood-good">06:49:00</td>
+              <td class="bg-good-avg">06:49:00</td>
+              <td class="bg-good-avg">06:50:00</td>
+              <td class="bg-poor">&gt;</td>
+              <td class="bg-poor">06:50:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <br>
+    </div>
+  </div>
+
+  <script>
+    const secondPanel = document.getElementById('second-panel');
+    const revealBtn = document.getElementById('reveal-btn');
+
+    function toggleSecondPanel() {
+      if (secondPanel.style.display === 'none' || secondPanel.style.display === '') {
+        secondPanel.style.display = 'block';
+        secondPanel.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        secondPanel.style.display = 'none';
+      }
+    }
+
+    // Trigger via Hyperlink click
+    revealBtn.addEventListener('click', toggleSecondPanel);
+
+    // Trigger via Keystroke (Alt + T)
+    document.addEventListener('keydown', function (event) {
+      if (event.altKey && event.key.toLowerCase() === 't') {
+        event.preventDefault();
+        toggleSecondPanel();
+      }
+    });
+  </script>
+
+  <br><br><br>
+  <div class="footer">
+    <p>Copyright 2020: RacingVirtualHorses.com/.net/.online</p>
+  </div>
+
+</body>
+
+</html>
