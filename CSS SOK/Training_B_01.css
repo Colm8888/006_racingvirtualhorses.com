@@ -1,0 +1,150 @@
+.calc-container {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: max-content; 
+    margin-left: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.calc-main-layout {
+    display: flex;
+    flex-direction: row-reverse; /* Flips the order, placing the buttons on the left and the grid on the right */
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+.calc-grid-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Grid tracks */
+.calc-grid-header,
+.calc-grid-row {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.calc-grid-header {
+    margin-bottom: 4px;
+}
+
+.header-item {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.calc-grid-row label {
+    font-weight: 600;
+    color: #334155;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+.calc-grid-row input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #1e293b;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calc-grid-row input:focus {
+    background-color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.calc-grid-row input[readonly] {
+    color: #475569;
+}
+
+.winner-row input {
+    background-color: #dcfce7 !important;
+    color: #166534 !important;
+    border: 1px solid #22c55e !important;
+    font-weight: normal !important;
+}
+
+/* Right-side vertical button column */
+.button-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 240px;
+}
+
+.site-button {
+    width: 100%;
+    height: 40px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.site-button:hover {
+    background-color: #1d4ed8;
+}
+
+.clear-button {
+    background-color: #64748b;
+}
+
+.clear-button:hover {
+    background-color: #475569;
+}
+
+/* Add this CSS for the summary box */
+.calc-summary-box {
+    margin-top: 15px;
+    padding: 14px 16px;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.5;
+}
+
+/* Style only the result input box in orange when it has the result-orange class */
+.calc-grid-row input.result-orange-input {
+    background-color: #ffedd5 !important;
+    color: #c2410c !important;
+    border: 1px solid #fb923c !important;
+}
+/* Styling for the dynamic summary box */
+.calc-summary-box {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #1b5e20;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #333333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}

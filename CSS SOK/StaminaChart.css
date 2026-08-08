@@ -1,0 +1,85 @@
+/* Responsive container with subtle depth */
+.colourful-table-container {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Base table styling */
+.colourful-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #1e293b;
+    text-align: left;
+}
+
+/* Vibrant sticky header with a gradient feel */
+.colourful-table th {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 14px 12px;
+    border-bottom: 3px solid #1e40af;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Cell padding */
+.colourful-table td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Soft alternating row colours */
+.colourful-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.colourful-table tbody tr:nth-child(even) {
+    background-color: #f8f7f4; /* Very soft pastel mint tint */
+}
+
+/* Smooth highlight effect on hover */
+.colourful-table tbody tr:hover {
+    background-color: #e0f2fe; /* Soft pastel blue highlight */
+    transition: background-color 0.15s ease-in-out;
+}
+
+/* Colour-coded status badges for data visualization */
+.badge {
+    padding: 4px 8px;
+    min-width: 40px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 11px;
+    display: inline-block;
+}
+.badge-pass { background-color: #dcfce7; color: #15803d; }
+.badge-warning { background-color: #fef9c3; color: #a16207; }
+.badge-alert { background-color: #fee2e2; color: #b91c1c; }
+
+.inline-button {
+    display: inline-block;
+    background-color: #3b82f6; /* Vibrant blue */
+    color: #ffffff;
+    padding: 4px 12px;
+    margin-left: 8px; /* Adds a little breathing room from the text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.inline-button:hover {
+    background-color: #99b3eb; /* Darker blue on hover */
+}
