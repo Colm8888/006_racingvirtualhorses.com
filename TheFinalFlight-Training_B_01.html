@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jsmain.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/MainFF.css">
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/NavBar.css">
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Misc.css">
+    <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Training_B_01.css">
+
+
+    <title>RacingVirtualHorses</title>`
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a href="TheFinalFlight-HomePage.html" style="text-decoration: none;">
+            <h3 style="color:white;font-size:22px;">Return to Final Flight Home Page</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="Home" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="About Us" href="TheFinalFlight-AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="Contact Us" href="../Contact Us.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="team" href="../SOK-Home-Page.html">Go to SOK Section</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+
+        <div class="paragraph-panel">
+            <span class="badge badge-primary" style="padding: 0.5em 0.8em; font-size: 1.1rem;">Training Method</span>
+            <h6>This method will determine all you horses preference on day 1 with 12 training runs or at least get
+                close.<h6>
+        </div>
+        <br>
+
+<div class="paragraph-panel">
+            <h2>Step One.</h2>
+            <p>Add Shoes and do a PW at 2 miles.<br>
+                Go to charts and note the distance(s) where your horses stamina falls between 10% and 20%.<br>
+                For example, if your horse has a stamina of 21% at 2 miles, then I would train at 2 3/4 miles where the
+                horse's stamina falls at 12%.</p>
+            <img src="images/Stamina_Chart.jpg" alt="DStamina chart" class="step-image"><br><br>
+            
+            <!-- Dropdown Only -->
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="distance_dropdown_1" style="font-weight: bold; margin-right: 10px;">Selected Distance:</label>
+                <select id="distance_dropdown_1" class="form-control" style="display: inline-block; width: auto;">
+                    <option value="2M">2M</option>
+                    <option value="2M 1/4">2M 1/4</option>
+                    <option value="2M 1/2">2M 1/2</option>
+                    <option value="2M 3/4">2M 3/4</option>
+                    <option value="3M">3M</option>
+                    <option value="3M 1/4">3M 1/4</option>
+                </select>
+                <p style="display: inline-block; margin: 0; font-size: 0.9em; color: #666;">&nbsp; &nbsp;  Not critical, just used for updating the text further down.</p>
+            </div>
+
+            <a button class="button-GoTo" role="button" href="TheFinalFlight-Training_Stamina_Chart.html">Go To Stamina
+                Charts</button></a>
+        </div>
+        <br>
+
+
+
+<!-- Calculator 01 -->
+        <div class="paragraph-panel">
+            <h2>Step Two.</h2>
+            <p>With the horse prefered distance predicted <span id="display_distance" style="font-weight: bold; color: #007bff;">[2M]</span>.<br>
+                Train at this distance with shoes only on <span style="color: rgb(11, 235, 41);">Firm</span>. Enter in
+                calculator below with the % for that going.<br>
+                Train at this distance with shoes only on <span style="color: rgb(219, 183, 22);">Good</span>. Enter in
+                calculator below with the % for that going.<br>
+                Train at this distance with shoes only on <span style="color: rgb(23, 35, 192);">Soft</span>. Enter in
+                calculator below with the % for that going.<br>
+                Train at this distance with shoes only on <span style="color: brown;">Heavy</span>. Enter in calculator
+                below with the % for that going.</p>
+            <br>
+        </div>
+
+
+        <div class="calc-container">
+            <!-- Main Content Area (Grid on Left, Buttons on Right) -->
+            <div class="calc-main-layout">
+
+                <!-- Left Side: Calculator Grid -->
+                <div class="calc-grid-wrapper">
+                    <!-- Column Headers -->
+                    <div class="calc-grid-header">
+                        <div class="header-spacer"></div>
+                        <div class="header-item">Training<br>Times</div>
+                        <div class="header-item">Going % <br></div>
+                        <div class="header-item">Result <br>(At Current %)</div>
+                        <div class="header-item">Assumptions <br>(All Goings 100%)</div>
+                    </div>
+
+                    <!-- Row 1: Firm -->
+                    <div class="calc-grid-row" id="row_1">
+                        <label>Firm:</label>
+                        <input type="text" id="input_1a">
+                        <input type="text" id="going_1">
+                        <input type="text" id="result_1" placeholder="Result" readonly>
+                        <input type="text" id="final_1" placeholder="Result" readonly>
+                    </div>
+
+                    <!-- Row 2: Good -->
+                    <div class="calc-grid-row" id="row_2">
+                        <label>Good:</label>
+                        <input type="text" id="input_2a">
+                        <input type="text" id="going_2">
+                        <input type="text" id="result_2" placeholder="Result" readonly>
+                        <input type="text" id="final_2" placeholder="Result" readonly>
+                    </div>
+
+                    <!-- Row 3: Soft -->
+                    <div class="calc-grid-row" id="row_3">
+                        <label>Soft:</label>
+                        <input type="text" id="input_3a">
+                        <input type="text" id="going_3">
+                        <input type="text" id="result_3" placeholder="Result" readonly>
+                        <input type="text" id="final_3" placeholder="Result" readonly>
+                    </div>
+
+                    <!-- Row 4: Heavy -->
+                    <div class="calc-grid-row" id="row_4">
+                        <label>Heavy:</label>
+                        <input type="text" id="input_4a">
+                        <input type="text" id="going_4">
+                        <input type="text" id="result_4" placeholder="Result" readonly>
+                        <input type="text" id="final_4" placeholder="Result" readonly>
+                    </div>
+                </div>
+
+                <!-- Right Side: Vertical Buttons -->
+                <div class="button-column">
+                    <button class="site-button" onclick="calculateRows()">Calculate</button>
+                    <button class="site-button clear-button" onclick="clearCalculator()">Clear</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Add this summary container right below your calculator grid or inside your container -->
+        <div id="calc-summary" class="calc-summary-box" style="display: none;"></div>
+
+        <!-- Script in External file ........ calculator_01.js -->
+        <script src="calculator_01.js"></script>
+        <br>
+
+<!-- Calculator_02 -->
+        <div class="paragraph-panel">
+            <h2>Step Three.</h2>
+            <p>With the horse prefered distance predicted <span id="display_distance_2" style="font-weight: bold; color: #007bff;">(2M)</span>, and the ground/going determined 
+                 this step works out the adds
+                <br>(Blinkers, Cheekpieces and Tongue Tie).<br>
+                In the previous step you will have one training time on the horses preferred distance and going with
+                shoes only.<br>
+                Enter this time in correct row below.
+            </p>
+            Train at preferred distance with shoes and Blinkers. Enter in calculator.<br>
+            Train at preferred distance with shoes and Cheekpieces. Enter in calculator.<br>
+            Train at preferred distance with shoes and Tongue Tie. Enter in calculator.<br>
+            <br>
+
+
+            <div class="calc-container">
+                <div class="calc-main-layout">
+
+                    <!-- Calculator 02-->
+                    <!-- Left Side: Calculator Grid (Now 3 Columns: Label, Training Times, Result) -->
+                    <div class="calc-grid-wrapper">
+                        <!-- Column Head`ers -->
+                        <div class="calc-grid-header">
+                            <div class="header-spacer"></div>
+                            <div class="header-item">Training Times<br><span
+                                    style="font-size: 10px; font-weight: normal;">(On preferred Distance and
+                                    going)</span></div>
+                            <div class="header-item">Result</div>
+                        </div>
+
+                        <!-- Row 1: Shoes Only -->
+                        <div class="calc-grid-row" id="row_1">
+                            <label>Shoes Only:</label>
+                            <input type="text" id="s2_input_1a" placeholder="0.00.00">
+                            <input type="text" id="s2_result_1" placeholder="Result" readonly>
+                        </div>
+
+                        <!-- Row 2: Shoes and Blinkers -->
+                        <div class="calc-grid-row" id="row_2">
+                            <label>Shoes and Blinkers:</label>
+                            <input type="text" id="s2_input_2a" placeholder="0.00.00">
+                            <input type="text" id="s2_result_2" placeholder="Result" readonly>
+                        </div>
+
+                        <!-- Row 3: Shoes and Cheekpieces -->
+                        <div class="calc-grid-row" id="row_3">
+                            <label>Shoes and Cheekpieces:</label>
+                            <input type="text" id="s2_input_3a" placeholder="0.00.00">
+                            <input type="text" id="s2_result_3" placeholder="Result" readonly>
+                        </div>
+
+                        <!-- Row 4: Shoes and Tongue Tie -->
+                        <div class="calc-grid-row" id="row_4">
+                            <label>Shoes and Tongue Tie:</label>
+                            <input type="text" id="s2_input_4a" placeholder="0.00.00">
+                            <input type="text" id="s2_result_4" placeholder="Result" readonly>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Vertical Buttons -->
+                    <div class="button-column">
+                        <button class="site-button" onclick="calculateShoes()">Calculate</button>
+                        <button class="site-button clear-button" onclick="clearShoes()">Clear</button>
+                    </div>
+
+                </div>
+
+                <!-- Summary Box for Calculator 02 -->
+                <div id="calc-summary-2" class="calc-summary-box" style="display: none;"></div>
+
+
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+    </div>
+    <script src="calculator_02.js"></script>
+    <!-- Add this script near the bottom of your body, e.g., right before the footer -->
+<!-- Add this script near the bottom of your body -->
+    <script>
+        document.addEventListener('keydown', function (event) {
+            // Shortcut for Calculator 01: Ctrl + Shift + D
+            if (event.ctrlKey && event.shiftKey && event.key === 'D') {
+                event.preventDefault();
+                document.getElementById('input_1a').value = '6.51.79';
+                document.getElementById('going_1').value = '40';
+                document.getElementById('input_2a').value = '6.51.89';
+                document.getElementById('going_2').value = '70';
+                document.getElementById('input_3a').value = '6.50.59';
+                document.getElementById('going_3').value = '50';
+                document.getElementById('input_4a').value = '6.50.64';
+                document.getElementById('going_4').value = '60';
+                console.log('Calculator 01 test data loaded!');
+            }
+
+            // Shortcut for Calculator 02: Ctrl + Shift + E
+            if (event.ctrlKey && event.shiftKey && event.key === 'E') {
+                event.preventDefault();
+                document.getElementById('s2_input_1a').value = '3.33.22';
+                document.getElementById('s2_input_2a').value = '3.32.98';
+                document.getElementById('s2_input_3a').value = '3.31.20';
+                document.getElementById('s2_input_4a').value = '3.31.42';
+                console.log('Calculator 02 test data loaded!');
+            }
+        });
+
+document.getElementById('distance_dropdown_1').addEventListener('change', function() {
+        let selectedValue = this.value;
+        document.getElementById('display_distance').textContent = '(' + selectedValue + ')';
+        document.getElementById('display_distance_2').textContent = '(' + selectedValue + ')';
+    });
+    </script>
+
+    <div class="footer">
+        <p>Copyright 2020: RacingVirtualHorses.com/.net/.online</p>
+    </div>
+</body>
+
+</html>
