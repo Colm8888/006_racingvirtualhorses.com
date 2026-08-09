@@ -112,16 +112,22 @@ function calculateRows() {
         });
 
 // Generate dynamic summary text on separate lines
-        if (summaryBox && bestCurrentRow && bestFinalRow) {
-            let currentBestName = rowNames[bestCurrentRow.row];
-            let overallBestName = rowNames[bestFinalRow.row];
+    if (summaryBox && bestCurrentRow && bestFinalRow) {
+        let currentBestName = rowNames[bestCurrentRow.row];
+        let overallBestName = rowNames[bestFinalRow.row];
 
-            // ADD THESE TWO LINES TO SAVE DATA:
-            let selectedDistance = document.getElementById('distance_dropdown_1').value;
-            localStorage.setItem('selectedDistance', selectedDistance);
-            localStorage.setItem('overallBestGoing', overallBestName);
+        let selectedDistance = document.getElementById('distance_dropdown_1').value;
+        localStorage.setItem('selectedDistance', selectedDistance);
+        localStorage.setItem('overallBestGoing', overallBestName);
 
-            summaryBox.innerHTML = `At current going percentages, <strong>${currentBestName}</strong> is best.<br>Assuming all goings are 100%, then your horse will perform best on <strong>${overallBestName}</strong>.<br><span style="color: red;">Caution: The variance between training runs can be large, so what is calculated is only an indication.</span>`;
-            summaryBox.style.display = 'block';
+        // --- ADD THIS BLOCK TO UPDATE STEP THREE ---
+        let goingDisplay = document.getElementById('display_winning_going');
+        if (goingDisplay) {
+            goingDisplay.textContent = overallBestName;
         }
+        // -------------------------------------------
+
+        summaryBox.innerHTML = `At current going percentages, <strong>${currentBestName}</strong> is best.<br>Assuming all goings are 100%, then your horse will perform best on <strong>${overallBestName}</strong>.<br><span style="color: red;">Caution: The variance between training runs can be large, so what is calculated is only an indication.</span>`;
+        summaryBox.style.display = 'block';
+    }
     }
