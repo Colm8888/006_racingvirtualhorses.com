@@ -83,3 +83,48 @@
 .inline-button:hover {
     background-color: #99b3eb; /* Darker blue on hover */
 }
+
+.jump-nav-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.jump-label {
+  font-weight: bold;
+}
+
+.jump-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.jump-btn {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3b82f6;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.jump-btn:hover {
+  background-color: #2563eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.jump-btn.back-to-top-btn {
+  background-color: #6b7280; /* Grey color (or your choice of color) */
+}
+
+.jump-btn.back-to-top-btn:hover {
+  background-color: #4b5563; /* Darker shade on hover */
+}
