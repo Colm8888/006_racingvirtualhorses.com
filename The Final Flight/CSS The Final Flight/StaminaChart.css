@@ -95,26 +95,27 @@
   font-weight: bold;
 }
 
+
 .jump-row {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
 }
-
 .jump-btn {
   display: inline-block;
   padding: 4px 8px;
   font-size: 12px;
   font-weight: 600;
   color: #fff;
-  background-color: #3b82f6;
+  background-color: #0a5e1c;
   border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, color 0.2s; /* Added color transition */
 }
 
 .jump-btn:hover {
-  background-color: #2563eb;
+  background-color: #256831;
+  color: #1a1a19; /* Change this to your desired hover text color (e.g., yellow, black, etc.) */
 }
 
 html {
@@ -122,9 +123,10 @@ html {
 }
 
 .jump-btn.back-to-top-btn {
-  background-color: #6b7280; /* Grey color (or your choice of color) */
+  background-color: #6b7280;
 }
 
 .jump-btn.back-to-top-btn:hover {
-  background-color: #4b5563; /* Darker shade on hover */
+  background-color: #4b5563;
+  /* If you want a different text color specifically for back-to-top on hover, add "color: #fff;" here */
 }
