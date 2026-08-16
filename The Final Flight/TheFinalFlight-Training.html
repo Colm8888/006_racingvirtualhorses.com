@@ -18,18 +18,18 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="jsmain.js"></script>
+    <script src="calculator_03_data.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="CSS The Final Flight/MainFF.css">
     <link rel="stylesheet" type="text/css" href="CSS The Final Flight/NavBar.css">
     <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Misc.css">
     <link rel="stylesheet" type="text/css" href="CSS The Final Flight/Training.css">
 
-
-    <title>RacingVirtualHorses</title>`
+    <title>RacingVirtualHorses</title>
 </head>
 
 <body>
@@ -66,23 +66,24 @@
     <div class="container">
 
         <div class="paragraph-panel">
-            <!-- <span class="badge badge-primary" style="padding: 0.5em 0.8em; font-size: 1.1rem;">Training Method</span>-->
             <h2>Training Method</h2>
-            <h6>This method will determine all you horses preference on day 1 with the 12 available training runs or at least give a fair indication.<h6>
+            <h6>This method will determine all your horses preference on day 1 with the 12 available training runs or at
+                least give a fair indication.<h6>
         </div>
         <br>
-
-<div class="paragraph-panel">
+<!-- Step 1 -->
+        <div class="paragraph-panel">
             <h2>Step One.</h2>
             <p>Add Shoes and do a PW at 2 miles.<br>
-                Go to charts and note the distance(s) where your horses stamina falls between 10% and 20%.<br>
+                Go to <a href="TheFinalFlight-Stamina_Chart.html">chart</a> and note the distance(s) where your horses
+                stamina falls between 10% and 20%.<br>
                 For example, if your horse has a stamina of 21% at 2 miles, then I would train at 2 3/4 miles where the
                 horse's stamina falls at 12%.</p>
-           <!--  <img src="Images/Stamina_Chart.jpg" alt="" class="step-image"><br><br>-->
-            
+
             <!-- Dropdown Only -->
             <div class="form-group" style="margin-bottom: 15px;">
-                <label for="distance_dropdown_1" style="font-weight: bold; margin-right: 10px;">Selected Distance:</label>
+                <label for="distance_dropdown_1" style="font-weight: bold; margin-right: 10px;">Selected
+                    Distance:</label>
                 <select id="distance_dropdown_1" class="form-control" style="display: inline-block; width: auto;">
                     <option value="2M">2M</option>
                     <option value="2M 1/4">2M 1/4</option>
@@ -91,20 +92,20 @@
                     <option value="3M">3M</option>
                     <option value="3M 1/4">3M 1/4</option>
                 </select>
-                <p style="display: inline-block; margin: 0; font-size: 0.9em; color: #666;">&nbsp; &nbsp;  Not critical, but recommended, used for updating the text further down.</p>
+                <p style="display: inline-block; margin: 0; font-size: 0.9em; color: #666;">&nbsp; &nbsp; Not critical,
+                    but recommended, used for updating the text further down.</p>
             </div>
 
             <a button class="button-GoTo" role="button" href="TheFinalFlight-Stamina_Chart.html">Go To Stamina
                 Chart</button></a>
         </div>
         <br>
-
-
-
-<!-- Calculator 01 -->
+<!-- Step 2 -->
+        <!-- Calculator 01 -->
         <div class="paragraph-panel">
             <h2>Step Two.</h2>
-            <p>With the horse prefered distance predicted <span id="display_distance" style="font-weight: bold; color: #007bff;">[2M]</span>.<br>
+            <p>With the horse preferred distance predicted <span id="display_distance"
+                    style="font-weight: bold; color: #007bff;">[2M]</span>.<br>
                 Train at this distance with shoes only on <span style="color: rgb(11, 235, 41);">Firm</span>. Enter in
                 calculator below with the % for that going.<br>
                 Train at this distance with shoes only on <span style="color: rgb(219, 183, 22);">Good</span>. Enter in
@@ -112,7 +113,8 @@
                 Train at this distance with shoes only on <span style="color: rgb(23, 35, 192);">Soft</span>. Enter in
                 calculator below with the % for that going.<br>
                 Train at this distance with shoes only on <span style="color: brown;">Heavy</span>. Enter in calculator
-                below with the % for that going.</p>
+                below with the % for that going.<br>
+            </p>
             <br>
         </div>
 
@@ -126,7 +128,7 @@
                     <!-- Column Headers -->
                     <div class="calc-grid-header">
                         <div class="header-spacer"></div>
-                        <div class="header-item">Training<br>Times</div>
+                        <div class="header-item">Training<br>Time</div>
                         <div class="header-item">Going % <br></div>
                         <div class="header-item">Result <br>(At Current %)</div>
                         <div class="header-item">Assumptions <br>(All Goings 100%)</div>
@@ -168,47 +170,46 @@
                         <input type="text" id="final_4" placeholder="Result" readonly>
                     </div>
                 </div>
-
-                <!-- Right Side: Vertical Buttons -->
+<!-- Buttons Step 2 -->
                 <div class="button-column">
                     <button class="site-button" onclick="calculateRows()">Calculate</button>
                     <button class="site-button clear-button" onclick="clearCalculator()">Clear</button>
+
+
+
                 </div>
 
             </div>
         </div>
 
-        <!-- Add this summary container right below your calculator grid or inside your container -->
         <div id="calc-summary" class="calc-summary-box" style="display: none;"></div>
 
-        <!-- Script in External file ........ calculator_01.js -->
-        <script src="calculator_01.js"></script>
-        <br>
 
-<!-- Calculator_02 -->
+
+        <!-- Step 3 -->
         <div class="paragraph-panel">
             <h2>Step Three.</h2>
-<p>With the horse prefered distance predicted <span id="display_distance_2" style="font-weight: bold; color: #007bff;">(2M)</span>, 
-        and the ground/going determined as <span id="display_winning_going" style="font-weight: bold; color: #007bff;">-</span> 
-        this step works out the adds
-        <br>(Blinkers, Cheekpieces and Tongue Tie).<br>
-        In the previous step you will have one training time on the horses preferred distance and going with
-        shoes only.<br>
-        Enter this time in correct row below.
-    </p>
+            <p>With the horse preferred distance predicted <span id="display_distance_2"
+                    style="font-weight: bold; color: #007bff;">(2M)</span>,
+                and the ground/going determined as <span id="display_winning_going"
+                    style="font-weight: bold; color: #007bff;">-</span>
+                this step works out the adds
+                <br>(Blinkers, Cheekpieces and Tongue Tie).<br>
+                In the previous step you will have one training time on the horses preferred distance and going with
+                shoes only.<br>
+                Enter this time in correct row below.
+            </p>
             Train at preferred distance with shoes and Blinkers. Enter in calculator.<br>
             Train at preferred distance with shoes and Cheekpieces. Enter in calculator.<br>
             Train at preferred distance with shoes and Tongue Tie. Enter in calculator.<br>
             <br>
 
-
             <div class="calc-container">
                 <div class="calc-main-layout">
 
-                    <!-- Calculator 02-->
-                    <!-- Left Side: Calculator Grid (Now 3 Columns: Label, Training Times, Result) -->
+                    <!-- Left Side: Calculator Grid -->
                     <div class="calc-grid-wrapper">
-                        <!-- Column Head`ers -->
+                        <!-- Column Headers -->
                         <div class="calc-grid-header">
                             <div class="header-spacer"></div>
                             <div class="header-item">Training Times<br><span
@@ -248,8 +249,9 @@
 
                     <!-- Right Side: Vertical Buttons -->
                     <div class="button-column">
-                        <button class="site-button" onclick="calculateShoes()">Calculate</button>
+                        <button class="site-button" onclick="calculateShoesCombined()">Calculate</button>
                         <button class="site-button clear-button" onclick="clearShoes()">Clear</button>
+                        <button class="site-button" onclick="loadStep2SampleData()">Load Step 2 Data</button>
                     </div>
 
                 </div>
@@ -257,21 +259,293 @@
                 <!-- Summary Box for Calculator 02 -->
                 <div id="calc-summary-2" class="calc-summary-box" style="display: none;"></div>
 
-
                 <br>
             </div>
         </div>
+
+        <!-- Step 4 -->
+        <div class="paragraph-panel">
+            <h2>Step Four.</h2>
+            <p>Verify your results using the remaining training runs.<br>
+                This training method for evaluating adds uses PW's with shoes (shoes never have negative effect) as the
+                baseline.<br>
+                By training with all the combinations, we can evaluate each of the adds individually<br>
+                So far ...... Selected Distance: <span id="display_distance_3"
+                    style="font-weight: bold; color: #007bff;">(2M)</span> |
+                Winning Going: <span id="display_winning_going_3" style="font-weight: bold; color: #007bff;">-</span> |
+                Winning Adds: <span id="display_winning_adds" style="font-weight: bold; color: #007bff;">-</span>
+            </p>
+            <br>
+            <div class="calc-container">
+                <div class="calc-main-layout"
+                    style="display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start;">
+
+
+
+
+                    <!-- Buttons Step 4 -->
+                    <div class="button-column"
+                        style="display: flex; flex-direction: column; gap: 10px; width: 160px; margin-right: 10px;">
+                        <button class="site-button" onclick="calculateVerification()">Calculate</button>
+                        <button class="site-button clear-button" onclick="clearVerification()">Clear</button>
+                    </div>
+
+                    <!-- Right Column: Quadrants + Bottom Averages Table + Summary Box -->
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                        <!-- 2x2 Grid for Inputs -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+                            <!-- Quadrant 1: Shoes Only -->
+                            <div class="calc-division-group division-shoes-only"
+                                style="background: rgba(40,167,69,0.05); padding: 15px; border-radius: 6px; border: 1px solid rgba(40,167,69,0.2);">
+                                <h5
+                                    style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #28a745; text-align: center;">
+                                    Shoes Only</h5>
+                                <div class="calc-grid-row" id="s3_row_1"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 1</label><input type="text" id="s3_input_1"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_2"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 2</label><input type="text" id="s3_input_2"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_3"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 3</label><input type="text" id="s3_input_3"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_4" style="grid-template-columns: 120px 1fr;">
+                                    <label style="font-size: 12px;">Run 4</label><input type="text" id="s3_input_4"
+                                        placeholder="0.00.00"></div>
+                            </div>
+
+                            <!-- Quadrant 2: Shoes and Blinkers -->
+                            <div class="calc-division-group division-blinkers"
+                                style="background: rgba(23,162,184,0.05); padding: 15px; border-radius: 6px; border: 1px solid rgba(23,162,184,0.2);">
+                                <h5
+                                    style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #17a2b8; text-align: center;">
+                                    Shoes and Blinkers</h5>
+                                <div class="calc-grid-row" id="s3_row_5"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 1</label><input type="text" id="s3_input_5"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_6"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 2</label><input type="text" id="s3_input_6"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_7"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 3</label><input type="text" id="s3_input_7"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_8" style="grid-template-columns: 120px 1fr;">
+                                    <label style="font-size: 12px;">Run 4</label><input type="text" id="s3_input_8"
+                                        placeholder="0.00.00"></div>
+                            </div>
+
+                            <!-- Quadrant 3: Shoes and Cheekpieces -->
+                            <div class="calc-division-group division-cheekpieces"
+                                style="background: rgba(255,193,7,0.05); padding: 15px; border-radius: 6px; border: 1px solid rgba(255,193,7,0.2);">
+                                <h5
+                                    style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #d39e00; text-align: center;">
+                                    Shoes and Cheekpieces</h5>
+                                <div class="calc-grid-row" id="s3_row_9"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 1</label><input type="text" id="s3_input_9"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_10"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 2</label><input type="text" id="s3_input_10"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_11"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 3</label><input type="text" id="s3_input_11"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_12" style="grid-template-columns: 120px 1fr;">
+                                    <label style="font-size: 12px;">Run 4</label><input type="text" id="s3_input_12"
+                                        placeholder="0.00.00"></div>
+                            </div>
+
+                            <!-- Quadrant 4: Shoes and Tongue Tie -->
+                            <div class="calc-division-group division-tongue-tie"
+                                style="background: rgba(220,53,69,0.05); padding: 15px; border-radius: 6px; border: 1px solid rgba(220,53,69,0.2);">
+                                <h5
+                                    style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #dc3545; text-align: center;">
+                                    Shoes and Tongue Tie</h5>
+                                <div class="calc-grid-row" id="s3_row_13"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 1</label><input type="text" id="s3_input_13"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_14"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 2</label><input type="text" id="s3_input_14"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_15"
+                                    style="grid-template-columns: 120px 1fr; margin-bottom: 8px;"><label
+                                        style="font-size: 12px;">Run 3</label><input type="text" id="s3_input_15"
+                                        placeholder="0.00.00"></div>
+                                <div class="calc-grid-row" id="s3_row_16" style="grid-template-columns: 120px 1fr;">
+                                    <label style="font-size: 12px;">Run 4</label><input type="text" id="s3_input_16"
+                                        placeholder="0.00.00"></div>
+                            </div>
+
+                        </div>
+
+                        <!-- Averages & Range Table with integrated small Tip button -->
+                        <div class="calc-division-group averages-section"
+                            style="background: rgba(0,123,255,0.03); padding: 15px; border-radius: 6px; border: 1px solid #b8daff;">
+                            <div
+                                style="display: grid; grid-template-columns: 210px 1fr 1fr; gap: 10px; margin-bottom: 10px; align-items: center;">
+                                <div></div>
+                                <h5
+                                    style="font-size: 14px; font-weight: bold; color: #004085; margin: 0; text-align: left;">
+                                    Averages</h5>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <h5
+                                        style="font-size: 14px; font-weight: bold; color: #004085; margin: 0; text-align: left;">
+                                        Range (Max - Min)</h5>
+                                    <button class="site-button" onclick="toggleTip()"
+                                        style="background-color: #17a2b8; border-color: #17a2b8; padding: 2px 8px; font-size: 11px; height: 24px; line-height: 1; width: auto;">Tip</button>
+                                </div>
+                            </div>
+
+                            <!-- Tip text box container -->
+                            <div id="tip-text-box"
+                                style="display: none; margin-bottom: 10px; padding: 10px; background: rgba(23,162,184,0.1); border: 1px solid #17a2b8; border-radius: 6px; font-size: 12px; color: #0c5460; position: relative;">
+                                <button type="button" onclick="toggleTip()"
+                                    style="position: absolute; top: 2px; right: 5px; background: none; border: none; font-size: 14px; font-weight: bold; color: #0c5460; cursor: pointer;">&times;</button>
+                                <div style="padding-right: 12px;">For you nerds<br>
+                                    When evaluating the averages of multiple training runs, the ultimate is to have the
+                                    range to be greater than 0.5.
+                                    This way you get closer to the true average and the result are reliably accurate.
+                                    <br>
+                                    For example, say the horse is programmed to run, with just shoes between 2.10.00 and
+                                    2.10.60 (A range of 0.6) this equals a true average of 2.10.30.<br>
+                                    You do a run and get a time of 2.10.10 and another run of 02 is 2.10.20. The range
+                                    is small 0.1. The average is 2.10.15<br>
+                                    This is not the true average. We know the true average to be 2.10.30.<br>
+                                    If the range is large, close to 0.5, for example, run 1 is 2.10.10 and run 2 is
+                                    2.10.60,
+                                    the average is 2.10.35 which very closely matches the true average of 2.10.30.
+
+                                </div>
+                            </div>
+
+                            <!-- Row 1: Shoes Only -->
+                            <div style="display: grid; grid-template-columns: 210px 1fr 1fr; gap: 10px; margin-bottom: 8px; align-items: center;"
+                                id="s3_row_17">
+                                <label style="font-size: 12px; color: #004085; margin: 0;">Shoes Only</label>
+                                <input type="text" id="s3_res_17" placeholder="Average" readonly
+                                    style="border-radius: 6px; border: 1px solid #ced4da; padding: 6px 12px;">
+                                <input type="text" id="s3_range_1" placeholder="Range" readonly
+                                    style="border-radius: 6px; border: 1px solid #ced4da; padding: 6px 12px;">
+                            </div>
+
+                            <!-- Row 2: Shoes and Blinkers -->
+                            <div style="display: grid; grid-template-columns: 210px 1fr 1fr; gap: 10px; margin-bottom: 8px; align-items: center;"
+                                id="s3_row_18">
+                                <label style="font-size: 12px; color: #004085; margin: 0;">Shoes and Blinkers</label>
+                                <input type="text" id="s3_res_18" placeholder="Average" readonly
+                                    style="border-radius: 6px; border: 1px solid #ced4da; padding: 6px 12px;">
+                                <input type="text" id="s3_range_2" placeholder="Range" readonly
+                                    style="border-radius: 6px; border: 1px solid #ced4da; padding: 6px 12px;">
+                            </div>
+
+                            <!-- Row 3: Shoes and Cheekpieces -->
+                            <div style="display: grid; grid-template-columns: 210px 1fr 1fr; gap: 10px; margin-bottom: 8px; align-items: center;"
+                                id="s3_row_19">
+                                <label style="font-size: 12px; color: #004085; margin: 0;">Shoes and Cheekpieces</label>
+                                <input type="text" id="s3_res_19" placeholder="Average" readonly
+                                    style="border-radius: 6px; border: 1px solid #ced4da; padding: 6px 12px;">
+                                <input type="text" id="s3_range_3" placeholder="Range" readonly
+                                    style="border-radius: 6px; border: 1px solid #ced4da; padding: 6px 12px;">
+                            </div>
+
+                            <!-- Row 4: Shoes and Tongue Tie -->
+                            <div style="display: grid; grid-template-columns: 210px 1fr 1fr; gap: 10px; align-items: center;"
+                                id="s3_row_21">
+                                <label style="font-size: 12px; color: #004085; margin: 0;">Shoes and Tongue Tie</label>
+                                <input type="text" id="s3_res_20" placeholder="Average" readonly
+                                    style="border-radius: 6px; border: 1px solid #ced4da; padding: 6px 12px;">
+                                <input type="text" id="s3_range_4" placeholder="Range" readonly
+                                    style="border-radius: 6px; border: 1px solid #ced4da; padding: 6px 12px;">
+                            </div>
+                        </div>
+
+                        <!-- Summary / Recommendation Box -->
+                        <div id="step4-summary-box" class="calc-division-group"
+                            style="background: rgba(40,167,69,0.05); padding: 15px; border-radius: 6px; border: 1px solid rgba(40,167,69,0.3);">
+                            <h5 style="font-size: 14px; font-weight: bold; margin-bottom: 8px; color: #28a745;">Summary
+                                & Recommendation</h5>
+                            <div id="step4-summary-content" style="font-size: 13px; color: #333; line-height: 1.5;">
+                                Click calculate to generate equipment performance summaries and optimal setup
+                                recommendations.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- Script Reference -->
+        <script src="calculator_01.js"></script>
+        <script src="calculator_02.js"></script>
+        <script src="calculator_03.js"></script>
+
+        <br>
+
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
     </div>
     </div>
-    <script src="calculator_02.js"></script>
-    <!-- Add this script near the bottom of your body, e.g., right before the footer -->
-<!-- Add this script near the bottom of your body -->
+
     <script>
+        // Function to populate Step 2 sample data
+        function loadStep2SampleData() {
+            document.getElementById('s2_input_1a').value = '3.33.22';
+            document.getElementById('s2_input_2a').value = '3.33.58';
+            document.getElementById('s2_input_3a').value = '3.32.20';
+            document.getElementById('s2_input_4a').value = '3.32.42';
+            console.log('Calculator 02 test data loaded!');
+        }
+
+        // Wrapper function to intercept Step Three calculation and update Step Four headers
+        function calculateShoesCombined() {
+            if (typeof calculateShoes === 'function') {
+                calculateShoes();
+            }
+
+            let summaryBox = document.getElementById('calc-summary-2');
+            let winningGoingText = "-";
+            let winningAddsText = "-";
+
+            if (summaryBox && summaryBox.style.display !== 'none') {
+                let text = summaryBox.innerText || summaryBox.textContent;
+
+                if (text.includes("Firm")) winningGoingText = "Firm";
+                else if (text.includes("Good")) winningGoingText = "Good";
+                else if (text.includes("Soft")) winningGoingText = "Soft";
+                else if (text.includes("Heavy")) winningGoingText = "Heavy";
+
+                let addsFound = [];
+                if (text.includes("Blinkers")) addsFound.push("Blinkers");
+                if (text.includes("Cheekpieces")) addsFound.push("Cheekpieces");
+                if (text.includes("Tongue Tie")) addsFound.push("Tongue Tie");
+
+                if (addsFound.length > 0) {
+                    winningAddsText = addsFound.join(", ");
+                } else if (text.includes("shoes only") || text.includes("Shoes Only")) {
+                    winningAddsText = "Shoes Only";
+                }
+            }
+
+            document.getElementById('display_winning_going_3').textContent = winningGoingText;
+            document.getElementById('display_winning_adds').textContent = winningAddsText;
+        }
+
         document.addEventListener('keydown', function (event) {
             // Shortcut for Calculator 01: Ctrl + Shift + D
             if (event.ctrlKey && event.shiftKey && event.key === 'D') {
@@ -290,19 +564,47 @@
             // Shortcut for Calculator 02: Ctrl + Shift + E
             if (event.ctrlKey && event.shiftKey && event.key === 'E') {
                 event.preventDefault();
-                document.getElementById('s2_input_1a').value = '3.33.22';
-                document.getElementById('s2_input_2a').value = '3.32.98';
-                document.getElementById('s2_input_3a').value = '3.31.20';
-                document.getElementById('s2_input_4a').value = '3.31.42';
-                console.log('Calculator 02 test data loaded!');
+                loadStep2SampleData();
+            }
+
+            // Shortcut for Calculator 03 (Step Four): Ctrl + Shift + R
+            if (event.ctrlKey && event.shiftKey && event.key === 'R') {
+                event.preventDefault();
+
+                // Shoes Only
+                document.getElementById('s3_input_1').value = '6.48.53';
+                document.getElementById('s3_input_2').value = '6.48.39';
+                document.getElementById('s3_input_3').value = '6.48.57';
+                document.getElementById('s3_input_4').value = '6.49.03';
+
+                // Shoes and Blinkers
+                document.getElementById('s3_input_5').value = '6.49.21';
+                document.getElementById('s3_input_6').value = '6.49.38';
+                document.getElementById('s3_input_7').value = '6.49.16';
+                document.getElementById('s3_input_8').value = '';
+
+                // Shoes and Cheekpieces
+                document.getElementById('s3_input_9').value = '6.48.31';
+                document.getElementById('s3_input_10').value = '6.48.10';
+                document.getElementById('s3_input_11').value = '6.48.70';
+                document.getElementById('s3_input_12').value = '';
+
+                // Shoes and Tongue Tie
+                document.getElementById('s3_input_13').value = '6.48.88';
+                document.getElementById('s3_input_14').value = '6.49.20';
+                document.getElementById('s3_input_15').value = '6.48.60';
+                document.getElementById('s3_input_16').value = '';
+
+                console.log('Calculator 03 test data loaded!');
             }
         });
 
-document.getElementById('distance_dropdown_1').addEventListener('change', function() {
-        let selectedValue = this.value;
-        document.getElementById('display_distance').textContent = '(' + selectedValue + ')';
-        document.getElementById('display_distance_2').textContent = '(' + selectedValue + ')';
-    });
+        document.getElementById('distance_dropdown_1').addEventListener('change', function () {
+            let selectedValue = this.value;
+            document.getElementById('display_distance').textContent = '(' + selectedValue + ')';
+            document.getElementById('display_distance_2').textContent = '(' + selectedValue + ')';
+            document.getElementById('display_distance_3').textContent = '(' + selectedValue + ')';
+        });
     </script>
 
     <div class="footer">
