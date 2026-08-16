@@ -18,7 +18,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="jsmain.js"></script>
-    <script src="calculator_03_data.js"></script>
+    <!-- Reference to external data and keyboard shortcuts file -->
+    <script src="calculators_sample_data.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -71,7 +72,7 @@
                 least give a fair indication.<h6>
         </div>
         <br>
-<!-- Step 1 -->
+        <!-- Step 1 -->
         <div class="paragraph-panel">
             <h2>Step One.</h2>
             <p>Add Shoes and do a PW at 2 miles.<br>
@@ -100,22 +101,20 @@
                 Chart</button></a>
         </div>
         <br>
-<!-- Step 2 -->
-        <!-- Calculator 01 -->
+        <!-- Step 2 -->
         <div class="paragraph-panel">
             <h2>Step Two.</h2>
             <p>With the horse preferred distance predicted <span id="display_distance"
                     style="font-weight: bold; color: #007bff;">[2M]</span>.<br>
-                Train at this distance with shoes only on <span style="color: rgb(11, 235, 41);">Firm</span>. Enter in
+                Train (01) at this distance with shoes only on <span style="color: rgb(11, 235, 41);">Firm</span>. Enter in
                 calculator below with the % for that going.<br>
-                Train at this distance with shoes only on <span style="color: rgb(219, 183, 22);">Good</span>. Enter in
+                Train (02) at this distance with shoes only on <span style="color: rgb(219, 183, 22);">Good</span>. Enter in
                 calculator below with the % for that going.<br>
-                Train at this distance with shoes only on <span style="color: rgb(23, 35, 192);">Soft</span>. Enter in
+                Train (03) at this distance with shoes only on <span style="color: rgb(23, 35, 192);">Soft</span>. Enter in
                 calculator below with the % for that going.<br>
-                Train at this distance with shoes only on <span style="color: brown;">Heavy</span>. Enter in calculator
-                below with the % for that going.<br>
+                Train (04) at this distance with shoes only on <span style="color: brown;">Heavy</span>. Enter in calculator
+                below with the % for that going.
             </p>
-            <br>
         </div>
 
 
@@ -170,21 +169,17 @@
                         <input type="text" id="final_4" placeholder="Result" readonly>
                     </div>
                 </div>
-<!-- Buttons Step 2 -->
+                <!-- Buttons Step 2 -->
                 <div class="button-column">
                     <button class="site-button" onclick="calculateRows()">Calculate</button>
                     <button class="site-button clear-button" onclick="clearCalculator()">Clear</button>
-
-
-
+                    <button class="site-button" onclick="loadStep2SampleData()">Load Sample Data</button>
                 </div>
 
             </div>
         </div>
 
         <div id="calc-summary" class="calc-summary-box" style="display: none;"></div>
-
-
 
         <!-- Step 3 -->
         <div class="paragraph-panel">
@@ -197,11 +192,11 @@
                 <br>(Blinkers, Cheekpieces and Tongue Tie).<br>
                 In the previous step you will have one training time on the horses preferred distance and going with
                 shoes only.<br>
-                Enter this time in correct row below.
+                Enter this time in correct(top) row below.
             </p>
-            Train at preferred distance with shoes and Blinkers. Enter in calculator.<br>
-            Train at preferred distance with shoes and Cheekpieces. Enter in calculator.<br>
-            Train at preferred distance with shoes and Tongue Tie. Enter in calculator.<br>
+            Train (05) at preferred distance with shoes and Blinkers. Enter in calculator.<br>
+            Train (06) at preferred distance with shoes and Cheekpieces. Enter in calculator.<br>
+            Train (07) at preferred distance with shoes and Tongue Tie. Enter in calculator.<br>
             <br>
 
             <div class="calc-container">
@@ -247,11 +242,11 @@
                         </div>
                     </div>
 
-                    <!-- Right Side: Vertical Buttons -->
+                    <!-- Step Three Right Side: Vertical Buttons -->
                     <div class="button-column">
                         <button class="site-button" onclick="calculateShoesCombined()">Calculate</button>
                         <button class="site-button clear-button" onclick="clearShoes()">Clear</button>
-                        <button class="site-button" onclick="loadStep2SampleData()">Load Step 2 Data</button>
+                        <button class="site-button" onclick="loadStep3SampleData()">Load Sample Data</button>
                     </div>
 
                 </div>
@@ -262,7 +257,7 @@
                 <br>
             </div>
         </div>
-
+<br>
         <!-- Step 4 -->
         <div class="paragraph-panel">
             <h2>Step Four.</h2>
@@ -280,14 +275,12 @@
                 <div class="calc-main-layout"
                     style="display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start;">
 
-
-
-
                     <!-- Buttons Step 4 -->
                     <div class="button-column"
                         style="display: flex; flex-direction: column; gap: 10px; width: 160px; margin-right: 10px;">
                         <button class="site-button" onclick="calculateVerification()">Calculate</button>
-                        <button class="site-button clear-button" onclick="clearVerification()">Clear</button>
+                        <button class="site-button clear-button" onclick="clearStep4()">Clear</button>
+                        <button class="site-button" onclick="loadStep4SampleData()">Load Sample Data</button>
                     </div>
 
                     <!-- Right Column: Quadrants + Bottom Averages Table + Summary Box -->
@@ -316,7 +309,8 @@
                                         placeholder="0.00.00"></div>
                                 <div class="calc-grid-row" id="s3_row_4" style="grid-template-columns: 120px 1fr;">
                                     <label style="font-size: 12px;">Run 4</label><input type="text" id="s3_input_4"
-                                        placeholder="0.00.00"></div>
+                                        placeholder="0.00.00">
+                                </div>
                             </div>
 
                             <!-- Quadrant 2: Shoes and Blinkers -->
@@ -339,7 +333,8 @@
                                         placeholder="0.00.00"></div>
                                 <div class="calc-grid-row" id="s3_row_8" style="grid-template-columns: 120px 1fr;">
                                     <label style="font-size: 12px;">Run 4</label><input type="text" id="s3_input_8"
-                                        placeholder="0.00.00"></div>
+                                        placeholder="0.00.00">
+                                </div>
                             </div>
 
                             <!-- Quadrant 3: Shoes and Cheekpieces -->
@@ -362,7 +357,8 @@
                                         placeholder="0.00.00"></div>
                                 <div class="calc-grid-row" id="s3_row_12" style="grid-template-columns: 120px 1fr;">
                                     <label style="font-size: 12px;">Run 4</label><input type="text" id="s3_input_12"
-                                        placeholder="0.00.00"></div>
+                                        placeholder="0.00.00">
+                                </div>
                             </div>
 
                             <!-- Quadrant 4: Shoes and Tongue Tie -->
@@ -385,7 +381,8 @@
                                         placeholder="0.00.00"></div>
                                 <div class="calc-grid-row" id="s3_row_16" style="grid-template-columns: 120px 1fr;">
                                     <label style="font-size: 12px;">Run 4</label><input type="text" id="s3_input_16"
-                                        placeholder="0.00.00"></div>
+                                        placeholder="0.00.00">
+                                </div>
                             </div>
 
                         </div>
@@ -419,14 +416,13 @@
                                     This way you get closer to the true average and the result are reliably accurate.
                                     <br>
                                     For example, say the horse is programmed to run, with just shoes between 2.10.00 and
-                                    2.10.60 (A range of 0.6) this equals a true average of 2.10.30.<br>
+                                    2.10.60 (A range of 0.6) then the true average will be 2.10.30.<br>
                                     You do a run and get a time of 2.10.10 and another run of 02 is 2.10.20. The range
                                     is small 0.1. The average is 2.10.15<br>
                                     This is not the true average. We know the true average to be 2.10.30.<br>
                                     If the range is large, close to 0.5, for example, run 1 is 2.10.10 and run 2 is
                                     2.10.60,
                                     the average is 2.10.35 which very closely matches the true average of 2.10.30.
-
                                 </div>
                             </div>
 
@@ -477,9 +473,14 @@
                             <h5 style="font-size: 14px; font-weight: bold; margin-bottom: 8px; color: #28a745;">Summary
                                 & Recommendation</h5>
                             <div id="step4-summary-content" style="font-size: 13px; color: #333; line-height: 1.5;">
-                                Click calculate to generate equipment performance summaries and optimal setup
+                                Click <div id="step4-summary-content" style="font-size: 13px; color: #333; line-height: 1.5;">
+    Click <a href="#" onclick="calculateVerification(); return false;" style="color: #28a745; text-decoration: underline; font-weight: 600;">calculate</a> to generate equipment performance summaries and optimal setup recommendations.
+</div> to generate equipment performance summaries and optimal setup
                                 recommendations.
                             </div>
+                            <p>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="return-top-btn">Return to Top</button>
+</p>
                         </div>
 
                     </div>
@@ -487,14 +488,12 @@
                 </div>
             </div>
 
-
-
         </div>
 
         <!-- Script Reference -->
-        <script src="calculator_01.js"></script>
-        <script src="calculator_02.js"></script>
-        <script src="calculator_03.js"></script>
+        <script src="calculator_Step_2.js"></script>
+        <script src="calculator_Step_3.js"></script>
+        <script src="calculator_Step_4.js"></script>
 
         <br>
 
@@ -503,15 +502,6 @@
     </div>
 
     <script>
-        // Function to populate Step 2 sample data
-        function loadStep2SampleData() {
-            document.getElementById('s2_input_1a').value = '3.33.22';
-            document.getElementById('s2_input_2a').value = '3.33.58';
-            document.getElementById('s2_input_3a').value = '3.32.20';
-            document.getElementById('s2_input_4a').value = '3.32.42';
-            console.log('Calculator 02 test data loaded!');
-        }
-
         // Wrapper function to intercept Step Three calculation and update Step Four headers
         function calculateShoesCombined() {
             if (typeof calculateShoes === 'function') {
@@ -546,59 +536,6 @@
             document.getElementById('display_winning_adds').textContent = winningAddsText;
         }
 
-        document.addEventListener('keydown', function (event) {
-            // Shortcut for Calculator 01: Ctrl + Shift + D
-            if (event.ctrlKey && event.shiftKey && event.key === 'D') {
-                event.preventDefault();
-                document.getElementById('input_1a').value = '6.51.79';
-                document.getElementById('going_1').value = '40';
-                document.getElementById('input_2a').value = '6.51.89';
-                document.getElementById('going_2').value = '70';
-                document.getElementById('input_3a').value = '6.50.59';
-                document.getElementById('going_3').value = '50';
-                document.getElementById('input_4a').value = '6.50.64';
-                document.getElementById('going_4').value = '20';
-                console.log('Calculator 01 test data loaded!');
-            }
-
-            // Shortcut for Calculator 02: Ctrl + Shift + E
-            if (event.ctrlKey && event.shiftKey && event.key === 'E') {
-                event.preventDefault();
-                loadStep2SampleData();
-            }
-
-            // Shortcut for Calculator 03 (Step Four): Ctrl + Shift + R
-            if (event.ctrlKey && event.shiftKey && event.key === 'R') {
-                event.preventDefault();
-
-                // Shoes Only
-                document.getElementById('s3_input_1').value = '6.48.53';
-                document.getElementById('s3_input_2').value = '6.48.39';
-                document.getElementById('s3_input_3').value = '6.48.57';
-                document.getElementById('s3_input_4').value = '6.49.03';
-
-                // Shoes and Blinkers
-                document.getElementById('s3_input_5').value = '6.49.21';
-                document.getElementById('s3_input_6').value = '6.49.38';
-                document.getElementById('s3_input_7').value = '6.49.16';
-                document.getElementById('s3_input_8').value = '';
-
-                // Shoes and Cheekpieces
-                document.getElementById('s3_input_9').value = '6.48.31';
-                document.getElementById('s3_input_10').value = '6.48.10';
-                document.getElementById('s3_input_11').value = '6.48.70';
-                document.getElementById('s3_input_12').value = '';
-
-                // Shoes and Tongue Tie
-                document.getElementById('s3_input_13').value = '6.48.88';
-                document.getElementById('s3_input_14').value = '6.49.20';
-                document.getElementById('s3_input_15').value = '6.48.60';
-                document.getElementById('s3_input_16').value = '';
-
-                console.log('Calculator 03 test data loaded!');
-            }
-        });
-
         document.getElementById('distance_dropdown_1').addEventListener('change', function () {
             let selectedValue = this.value;
             document.getElementById('display_distance').textContent = '(' + selectedValue + ')';
@@ -606,7 +543,6 @@
             document.getElementById('display_distance_3').textContent = '(' + selectedValue + ')';
         });
     </script>
-
     <div class="footer">
         <p>Copyright 2020: RacingVirtualHorses.com/.net/.online</p>
     </div>
