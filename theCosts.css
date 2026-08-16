@@ -1,0 +1,61 @@
+/* Style specifically for the "More Information" buttons */
+button[onclick*="showModal"] {
+  background-color: #06450c; /* Green background color */
+  color: #ffffff;            /* White text */
+  border: 1px solid #080808; /* Border thickness, style, and color */
+  padding: 3px 12px;         /* Adds inner spacing */
+  font-size: 14px;           /* Sets text size */
+  font-weight: 600;          /* Makes text slightly bold */
+  border-radius: 6px;        /* Creates rounded corners */
+  cursor: pointer;           /* Changes cursor to a pointer on hover */
+  transition: background-color 0.2s ease, transform 0.1s ease; /* Smooth hover transition */
+}
+
+/* Hover styling for the "More Information" buttons */
+button[onclick*="showModal"]:hover {
+  background-color: #83cf8a; /* Darker green on hover */
+}
+
+/* Click effect */
+button[onclick*="showModal"]:active {
+  transform: scale(0.98);    /* Slightly shrinks button when clicked */
+}
+
+/* Style for the dialog pop-up box */
+dialog[id^="info"] {
+  background-color: #ffffff; /* Clean white background */
+  color: #222222;            /* Dark text for easy reading */
+  border: 2px solid #0b7c15; /* Matching green border */
+  border-radius: 10px;       /* Rounded corners for the box */
+  padding: 24px;             /* Inner spacing */
+  max-width: 500px;          /* Prevents the box from getting too wide */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Style the backdrop behind the dialog (dims the rest of the page) */
+dialog[id^="info"]::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+/* Style the heading inside the dialog */
+dialog[id^="info"] h3 {
+  margin-top: 0;
+  color: #0b7c15;            /* Green heading */
+}
+
+/* Style the close button inside the dialog form */
+dialog[id^="info"] form button {
+  background-color: #e0e0e0; /* Neutral grey button */
+  color: #333333;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background-color 0.2s ease;
+}
+
+dialog[id^="info"] form button:hover {
+  background-color: #cccccc; /* Darker grey on hover */
+}
