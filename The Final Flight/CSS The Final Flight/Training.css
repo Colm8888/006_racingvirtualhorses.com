@@ -148,3 +148,24 @@
     color: #333333;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
+.return-top-btn {
+    background-color: #28a745; /* Matches your green theme accents */
+    color: white;
+    border: none;
+    padding: 3px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.return-top-btn:hover {
+    background-color: #218838;
+}
+
+.return-top-btn:active {
+    transform: scale(0.98);
+}
